@@ -6,7 +6,7 @@ title:            Statistiline andmeteadus ja visualiseerimine
 tagline:          MTMS.01.100
 url:              http://andmeteadus.github.io/
 paginate:         1
-baseurl:          /2022
+baseurl:          /2023
 author:
   name:           Kaari Kuus, Raul Niit, Tanel Pärnamaa, Kaspar Märtens
   url:            
@@ -15,7 +15,7 @@ author:
 # Custom vars
 version:          1.0.0
 github:
-  repo:           http://andmeteadus.github.io/2022
+  repo:           http://andmeteadus.github.io/2023
 
 pages_list:       
   Praktikumid: '/praktikumid'
