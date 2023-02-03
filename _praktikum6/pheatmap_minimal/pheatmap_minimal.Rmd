@@ -1,0 +1,116 @@
+---
+output: 
+  html_document:
+    theme: null
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE)
+```
+
+# pheatmap minimalistlik näide
+
+Suurtest andmetabelitest või maatriksitest on n-ö silmaga peale vaadates raske ülevaadet saada. Üks võimalus nende visualiseerimiseks on [*heat map*](http://en.wikipedia.org/wiki/Heat_map), kus sarnaselt geograafilisele soojuskaardile kasutatakse värve, et näidata maatriksi elementide väärtuseid. 
+
+Tutvume järgnevalt paketiga *pheatmap* (tähendusega *pretty heatmaps*), mille autoriks on Raivo Kolde (TÜ statistika vilistlane). Funktsiooni `pheatmap()` võib kasutada muuhulgas järgmiste visualisatsioonide jaoks:
+
+1. Visualiseerida maatriksit nii, nagu ta on.
+2. Visualiseerida maatriksit, klasterdades kas ainult tema ridu või veerge. 
+3. Visualiseerida maatriksit, klasterdades nii ridu kui ka veerge. 
+
+Sisuliselt tähendab klasterdamine, et sarnased read või veerud paigutatakse lähestikku. See võimaldab näha andmetes mustreid, mis muidu jääks võib-olla märkamata. Et klasterdamisest täpsemalt teada saada, vaata [videot hierarhilise klasterdamise kohta](https://www.youtube.com/watch?v=7xHsRkOdVwo&ab_channel=StatQuestwithJoshStarmer). 
+
+### Näidisandmestiku koostamine
+
+```{r}
+# Koostame näidismaatriksi, mis sisaldaks teatud mustrit
+test = matrix(rnorm(200), 20, 10)
+test[1:10, seq(1, 10, 2)] = test[1:10, seq(1, 10, 2)] + 3
+test[11:20, seq(2, 10, 2)] = test[11:20, seq(2, 10, 2)] + 2
+test[15:20, seq(2, 10, 2)] = test[15:20, seq(2, 10, 2)] + 4
+# Kui anname maatriksi ridadele/veergudele nimed, näeme neid heatmapil
+colnames(test) = paste("Veerg", 1:10, sep = "")
+rownames(test) = paste("Rida", 1:20, sep = "")
+```
+
+### Näide 1: heatmap ilma klasterdamiseta
+
+Et visualiseerida maatriksit nii, nagu ta on, on vaja argumente `cluster_rows=FALSE, cluster_cols=FALSE`, sest vaikimisi on nende väärtus `TRUE`.  
+
+```{r, fig.height=6}
+library(pheatmap)
+pheatmap(test, cluster_rows=FALSE, cluster_cols=FALSE)
+```
+
+### Näide 2: heatmap klasterdatud veergudega
+
+```{r, fig.height=6}
+pheatmap(test, cluster_rows=FALSE)
+```
+
+Näeme, et veergude järjestus on muutunud: sarnased veerud asetsevad lähestikku. 
+
+Uuri täpsemalt `?pheatmap`. 
+
+### Muid võmalusi heatmapi tegemiseks
+
+1. *ggplot* joonise korral saab kasutada funktsiooni `geom_raster`. Sama töö teeb ära ka `geom_tile`, kuid see on üldisem (võimalik on määrata ka n-ö kastide suurusi) ja sellest tulenevalt nii ajaliselt kui mälu poolest kulukam. 
+  - Andmestik on vaja ette anda pikas formaadis
+  - Kui esineb vajadus rida ja/või veerge klasterdada, tuleb seda teha eraldiseisvalt
+
+```{r, fig.height=4}
+library(dplyr)
+library(tidyr)
+library(readr)
+library(ggplot2)
+library(viridis)
+test_pikk = as.data.frame(test) %>% 
+  mutate(Rida = rownames(test)) %>% 
+  gather(key = Veerg, value = Vaartus, -Rida) %>% 
+  mutate(Rida = parse_number(Rida), Veerg = parse_number(Veerg))
+  
+ggplot(test_pikk, aes(x = Veerg, y = Rida, fill = Vaartus)) +
+  geom_raster() +
+  scale_x_continuous(breaks = 1:10) +
+  scale_y_continuous(breaks = 1:20) +
+  theme(panel.grid.minor = element_blank()) +
+  scale_fill_viridis(option = "B")
+
+```
+
+2. [*Superheat*](https://rlbarter.github.io/superheat/index.html) - väga palju võimalusi joonise disainimiseks.
+
+```{r, fig.height=6}
+library(superheat)
+superheat(test,
+          bottom.label.text.angle = -60,
+          pretty.order.rows = TRUE,
+          pretty.order.cols = TRUE)
+```
+
+3. Interaktiivsed võimalused 
+  - [*d3heatmap*](https://github.com/talgalili/d3heatmap)
+
+```{r, fig.height=4}
+if (!require("devtools")) install.packages("devtools") 
+devtools::install_github("talgalili/d3heatmap") # Paketi allalaadimine
+
+library(d3heatmap)
+d3heatmap(test, Rowv = FALSE, Colv = TRUE, colors="YlOrRd", cellnote = test)
+```
+
+  - [*plotly*](https://plot.ly/r/heatmaps/)
+
+```{r, fig.height=4}
+library(plotly)
+plot_ly(x=colnames(test), y=rownames(test), z = test, type = "heatmap")
+```
+
+  - [*highcharter*](https://jkunst.com/highcharter/index.html)
+
+```{r, fig.height=4}
+library(highcharter)
+hchart(test_pikk, "heatmap", hcaes(x = Veerg, y = Rida, value = Vaartus))
+```

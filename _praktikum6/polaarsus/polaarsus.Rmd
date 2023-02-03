@@ -1,0 +1,133 @@
+---
+title: "Erakondade polaarsus"
+output: 
+  html_document:
+    theme: null
+---
+
+### Sissejuhatus
+
+Maidu "Parem" Käsi haaras lapsena kaisukaru küll vasaku käega, kuid ema sõnad "vasak on paha, parem on parem" ei teinud tast ainult paremakäelist, vaid need jäid alatiseks meelde. Näiteks meeldib Maidule kinos istuda kõige parempoosel pingil ja valimistel hääletada kõige parempoolse poliitiku poolt.
+Aga kuidas Maidu teab, kes on kõige parempoolne poliitik?
+
+Selles ülesanneteblokis vaatamegi, kas peakomponentanalüüsi abil on võimalik poliitikuid liigitada vasak- ja parempoolseteks ning milline on parlamendis valitsev kambavaim.
+
+### Andmestik
+
+Tegeleme andmestikuga, mis kajastab Riigikogu 13. koosseisu hääletusi. Kui viienda kodutöö neljandas ülesandes tuli alla kraapida vaid äriseadustiku muutmise seaduse hääletuse tulemusi, siis käesolevalt on kasutada kõikide hääletuste tulemusi (välja on jäetud kohaloleku kontrolli ja muud mittesisukad hääletused). Täpsemalt on andmestikus tunnused:
+
+* Nimi - saadiku nimi
+* Fraktsioon - millisesse fraktsiooni kuulus saadik (kui saadik vahetas fraktsiooni, siis on näidatud kõige sagedasem fraktsioon, kuhu saadik Riigikogu XIII vältel kuulunud on)
+* Otsus - saadiku otsus (Poolt, Vastu, Erapooletu, Ei hääletanud, Puudub)
+* kpv - hääletuse kuupäev
+* id - hääletuse id
+
+Laadi alla andmestik [*Riigikogu_XIII.csv*](../data/Riigikogu_XIII.csv) ja loe töökeskkonda.
+
+### Ülesanne 3.1 (2 punkt) - andmestiku mudimine
+
+a) Muuda tunnus *Otsus* numbriliseks. Selleks kodeeri hääletused järgmiselt:
+
+* *Vastu* tähista arvuga -1
+* *Poolt* tähista arvuga 1
+* *Puudub, Erapooletu, Ei hääletanud* tähista arvuga 0
+
+Pane tähele, et väärtused oleksid numbrilised mitte sõned.
+
+b) Jäta välja saadikud, keda esineb andmestikus alla 5 korra.
+
+```{r}
+# Ülesanne 3.1
+# sinu kood
+
+```
+
+### Ülesanne 3.2 (3 punkti) - visualiseeri andmeid heatmapi abil
+
+a) Sorteeri andmestiku read fraktsiooni põhjal ja visualiseeri neid heatmapi abil. Tõlgenda tulemusi.
+
+Näpunäide: 
+
+* Selleks, et kasutada näiteks funktsiooni `pheatmap`, tuleb tekitada andmemaatriks, kus ridades on numbrilisele kujule viidud saadikute hääletused. Täpsemini veergudes on hääletused (`id`) ja ridades riigikogu liikmed. Puhtalt numbriliseks aitab muuta funktsioon `as.matrix()` aga enne peab kõik tekstilised tunnused välja jätma.
+
+```{r}
+# Ülesanne 3.2a
+# sinu kood
+
+```
+
+Tõlgendus: ...
+
+b) Visualiseeri andmestikku heatmapi abil, aga seekord klasterda read. Tõlgenda tulemusi.
+
+```{r}
+# Ülesanne 3.2b
+# sinu kood
+
+```
+
+Tõlgendus: ...
+
+c) Visualiseeri andmestikku heatmapi abil, aga seekord klasterda nii read kui veerud. Tõlgenda tulemusi.
+
+```{r}
+# Ülesanne 3.2c
+# sinu kood
+
+```
+
+Tõlgendus: ...
+
+### Ülesanne 3.3 (1 punkt)
+
+Riigikogu 2015. aasta valimised võitis Reformierakond ning koalitsioonilepe sõlmiti REF, IRL ja SDE vahel. 2016. aasta sügisel see koalitsioon purunes. Sellega lõppes Reformierakonna enam kui 17 aastat järjest valitsuses oleku ajajärk ning Eesti sai 11-aastase vahe järel mittereformierakondlasest peaministri. 23. novembril 2016 algas Jüri Ratase valitsus, kus koalitsiooni moodustasid KESK, IRL ja SDE. 
+
+Jaga sisseloetud andmestik *data* kaheks alamandmestikuks *data1* ja *data2*. Esimene neist sisaldagu enne kuupäeva 2016-11-23 toimunud hääletusi. Andmestik *data2* sisaldagu hääletusi alates kuupäevast 2016-11-23.
+
+Näpunäide:
+
+* Andmestikus olev tunnus *kpv* on hetkel sõnalisel kujul. Muuda see tunnus kuupäev-tüüpi tunnuseks, kasutades funktsiooni `as.Date()` ja parameetrit `format = "%d.%m.%Y"`.
+
+
+```{r}
+# Ülesanne 3.3
+# sinu kood
+
+```
+
+### Ülesanne 3.4 (3 punkti)
+
+a) Tee PCA esialgsele andmestikule. Visualiseeri kahte esimest peakomponenti hajuvusdiagrammi abil, seejuures värvi punktid fraktsioonide alusel. Tõlgenda tulemusi.
+
+Näpunäide:
+
+* PCA tegemiseks on vaja kasutada laias formaadis andmestikku, kus iga saadik on eraldi real ja veergudes on toimunud hääletustele vastavad otsused.
+
+```{r}
+# Ülesanne 3.4a
+# sinu kood
+
+```
+
+Tõlgendus: ...
+
+b) Tee PCA nii andmestikule *data1* kui ka *data2*. Mõlemal juhul visualiseeri kahte esimest peakomponenti hajuvusdiagrammi abil, seejuures värvi punktid fraktsioonide alusel. Tõlgenda tulemusi.
+
+```{r}
+# Ülesanne 3.3b
+# sinu kood
+
+```
+
+Tõlgendus: ...
+
+### Ülesanne 3.5 (1 punkt)
+
+a) Eelmises ülesandes rakendasid PCA-d andmestikule *data2* ja visualiseerisid seda kasutades kahte esimest komponenti. Kas piisab ka ühest komponendist?
+
+Vastus: ...
+
+b) Kuidas võiks tõlgendada esimest peakomponenti? Kas see näitab vasak- ja parempoolsust?
+
+> Vasakpoolsust iseloomustab püüd riigi kaudu teostada sotsiaalset ja majanduslikku võrdsustamist. Parempoolsust iseloomustab põhimõte, mille kohaselt iga ühiskonna liige on ise vastutav oma sotsiaalse ja majandusliku heaolu eest. [Vikipeedia](http://et.wikipedia.org/wiki/Eesti_erakonnad_vasak-parem-skaalal)
+

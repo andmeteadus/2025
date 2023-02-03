@@ -1,0 +1,22 @@
+---
+title: "Kodutöö"
+output: 
+  html_document:
+    theme: null
+---
+
+
+# I osa 
+(**15 punkti**) Lahenda praktikumis alustatud [NBA](../praktikum4_nba) ülesanded.
+
+# II osa
+(**10 punkti**) Lahenda [lennuliikluse visualiseerimise](../praktikum4_geo) ülesanded.
+
+
+# Mida on vaja esitada?
+
+* I osa ülesanne 1.6 kohta tuleb esitada iseseisvalt töötav Shiny rakenduse fail (nö. app.R või ui.R ja server.R). **NB! Nimeta fail ümber kujule `<matrikli nr>_app.R` või `<matrikli nr>_ui.R`/`<matrikli nr>_server.R` (nt A12345_app.R).**
+* Ülejäänud I osa ülesanded ja II osa lahendused esita [Jupyter failis](../kodutood/kodutoo4.ipynb).
+* Lisaks võiksid mainida, kui palju aega kulus I ja II osa peale. Mida arvad ülesannetest?
+
+Lahendused esitada [Moodle keskkonna](https://moodle.ut.ee/course/view.php?id=8013#section-1) kaudu.

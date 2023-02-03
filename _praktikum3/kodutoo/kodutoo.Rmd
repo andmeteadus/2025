@@ -1,0 +1,16 @@
+---
+title: "Kodutöö"
+output: 
+  html_document:
+    theme: null
+---
+
+
+(**25 punkti + boonuspunktid**) Lahenda praktikumis alustatud [**õppetulemuste visualiseerimise**](../praktikum3_oppeained) ülesanded.
+
+# Mida on vaja esitada?
+
+* Ülesande 3 kohta tuleb esitada zip fail, kus oleks kõik, mis vajalik shiny rakenduse töötamiseks, sealhulgas *app.R* (või *server.R* ja *ui.R*) ning andmestiku fail. **NB! Nimeta fail ümber kujule `<matrikli nr>_app.R` või `<matrikli nr>_ui.R`/`<matrikli nr>_server.R` (nt A12345_app.R).**
+* Ülejäänud ülesannete kohta tuleb esitada andmeanalüüsi kood [Jupyter Notebook failis](../kodutood/kodutoo3.ipynb).
+
+Lahendused esitada [Moodle keskkonna](https://moodle.ut.ee/course/view.php?id=8013#section-1) kaudu.

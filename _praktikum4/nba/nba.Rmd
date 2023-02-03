@@ -1,0 +1,224 @@
+---
+output: 
+  html_document:
+    theme: null
+editor_options: 
+  chunk_output_type: console
+---
+
+Jaanus "Sops" Kolmene käib jõusaalis kolm korda nädalas. Järgmisel kuul sisustab ta ka reede õhtupooliku raskusi tõstes, sest tema rinnalihas on statistiku jaoks liiga nõrk. Nimelt otsib korvpalliklubi Brooklyn Nets oma ridadesse statistikut, kes analüüsiks korvpalliandmeid ja aitaks seeläbi optimiseerida meeskonna mängustrateegiat. Kandidaadi nõuete seas on ka 50 kg rinnalt surumine.
+
+Kuna rinnalihase nõue on ehk peagi täidetud, tahab Jaanus enne intervjuule minekut saada praktilist kogemust NBA andmete analüüsimisel. Ta teab, et NBA mängude kohta kogutakse SportVU tehnoloogia abil detailset statistikat.
+
+![](player-tracking-summary.gif "Joonis nba.com lehelt")
+
+Ta tahab koostada iga mängija ja meeskonna kohta profiili: kust visatakse ning kust tabatakse. Just nagu tegi [NY Times'i graafikaosakond:](http://www.nytimes.com/interactive/2012/06/11/sports/basketball/nba-shot-analysis.html)
+
+![](nytimes.png "Näide")
+
+Selles praktikumis uurime, kuidas teha sarnast joonist R-i vahenditega.
+
+### Tutvumine andmestikuga
+
+```{r, eval = FALSE, include=FALSE}
+# # Vajalik paketi devtools olemasolu
+# devtools::install_github("imadmali/NBAapi") 
+# library(NBAapi)
+# 
+# #visete andmestik, mis tuli paketiga kaasa
+# str(shots_1617) 
+```
+
+Kasutame NBA 2020/21 hooaja andmeid.
+Lae alla vajalikud [NBA 2020/21 hooaja andmed](https://github.com/andmeteadus/2022/raw/master/data/NBA_20_21.zip) aine kodulehelt, paki fail lahti ja loe andmed järgmise koodiga sisse:
+
+```{r, eval=FALSE}
+# Sea paika töökataloog 
+# Kui skripti fail asub samas kaustas andmetega, siis kasuta järgmist koodi.
+setwd(dirname(rstudioapi::getActiveDocumentContext()[[2]]))
+
+# Loe andmed sisse
+nba <- read.csv('NBA_20_21.csv')
+```
+
+
+Tunnused, mida järgnevalt vaja läheb, on:
+
+* *PLAYER_NAME* - korvpalluri nimi
+* *TEAM_NAME* - korvpalluri meeskonna nimi
+* *SHOT_MADE_FLAG* - kas vise läks korvi
+* *LOC_X* - viske x-koordinaat
+* *LOC_Y* - viske y-koordinaat
+
+Andmestikust ülevaate saamiseks võid enda jaoks visualiseerida huvipakkuva mängija viskekohti hajuvusdiagrammi abil, kus iga vise oleks punktike. Kasuta tunnuseid *LOC_X* ja *LOC_Y*.
+
+Näpunäide: kasuta käsku `coord_fixed(ratio = 1)` (ka edaspidiselt).
+
+
+### Ülesanne 1.1 - väljak diskreetseks (2 punkti)
+
+Diskretiseeri mänguväljak (jaga mänguväljak tükkideks). 
+
+![](diskretiseeritud_manguvaljak.png "Näide")
+
+Tükid moodusta nii, et ümarda x- ja y-koordinaat kümnelisteni. Iga kastikese kohta arvuta:
+
+* visete arv
+* tabavusprotsent
+
+Tee seda iga algandmestikus oleva mängija puhul, võttes arvesse ka mängija meeskondlikku kuuluvust (mängija võib hooaja keskel meeskonda vahetada). Salvesta saadud andmestik muutujasse *nba_agr*.
+
+Näpunäited: 
+
+* uuri, mida teeb käsk `round(21:30, -1)`.
+* kasuks tuleb paketi dplyr funktsionaalsus (`mutate`, `group_by`, `summarise`)
+
+```{r}
+# sinu kood
+```
+
+### Ülesanne 1.2 - mänguväljaku põhja lisamine (1 punkti)
+
+Kasuta edasisel visualiseerimisel järgnevat koodi näidist mänguväljaku loomiseks:
+
+```{r,eval=FALSE}
+library(grid) 
+library(jpeg) 
+
+# mänguväljaku loomine pildi abil
+manguvaljak <- rasterGrob(readJPEG("nba_court.jpg"), width=unit(1,"npc"), height=unit(1,"npc"))
+                    
+valitud_mangija_agr = filter(nba_agr, PLAYER_NAME == 'LeBron James') # Vaheta nimi!
+
+valjak <- ggplot(valitud_mangija_agr, aes(x = x_uus, y = y_uus)) + 
+  annotation_custom(manguvaljak, -250, 250, -50, 420) + geom_point()
+  
+# sinu kood
+
+```
+
+
+Visualiseeri enda jaoks ülesandes 1 saadud andmeid (valitud mängija korral). Iga diskretiseeritud kastikese kohta joonista ring. Ringi pindala olgu proportsionaalne visete arvuga.
+
+Näpunäited: 
+
+* määra `ylim(-50,300)` ja `xlim(-250,250)` (et ka varupingimeestel või hooaja keskel liitunutel näidatakse ikka tervet väljakut).
+
+
+### Ülesanne 1.3 - suuruse muutmine (1 punkti)
+
+NY Timesi graafikaosakond on jaganud visete arvu kolme kategooriasse: *low*, *medium*, *high*. Vali välja piirid, mille põhjal jaotatakse visete arv kolme kategooriasse (*low*, *medium*, *high*). Iga kategooria jaoks vali sobiv pindala suurus (kontrolli, et tulemus oleks visuaalselt kena). Kirjuta funktsioon `kolm_suurust`, mis vastavalt valitud suuruste väärtustele ning kategooriate piiridele tagastab andmestiku, kus tunnus "uus_suurus" vastab kategooria suurusele.
+
+```{r, eval=FALSE}
+kolm_suurust = function(andmed, suurus1, suurus2, suurus3, piir1, piir2){
+  # Kui visete_arv <= piir1, siis uus_suurus = suurus1,
+  # kui piir1 < visete_arv <= piir2, siis uus_suurus = suurus2,
+  # kui visete_arv>piir2, siis uus_suurus = suurus3
+  
+  # sinu kood
+}
+```
+
+
+Visualiseeri enda jaoks viskepositsioone sarnaselt eelmisele joonisele, kuid nüüd olgu ringidel vaid 3 erinevat suurust.
+
+
+### Ülesanne 1.4 - värvid (1 punkti)
+
+Uuri, mida tähistavad [NY Times'i graafikul](http://www.nytimes.com/interactive/2012/06/11/sports/basketball/nba-shot-analysis.html) punane ja roheline värv.
+
+Lisa nüüd ringidele värv vastavalt visketabavusele. Kasuta sarnast värvigammat, näiteks värvikoodid *#ABCDBC*, *#EFF471* ja *#D9060B*.
+
+Näpunäide:
+
+* uuri, mida teeb käsk `scale_color_gradient2()`, sh parameeter *midpoint*.
+
+
+### Ülesanne 1.5 - kuusnurgad (3 punkti)
+
+Kasuta nüüd ringide asemel kuusnurki. 
+
+Meeldetuletus kuusnurkadest:
+
+![](hexagon.png "Näide")
+
+`ggplot()` võimaldab parameetri `shape` abil määrata erinevaid geomeetrilisi kujutusviise (näit. ruut, kolmnurk), kuid valikute seas ei leidu kuusnurka. Oleme ette andnud funktsiooni `kuusnurk`, mis sisestades kuusnurga keskpunkti koordinaadid ja pindala, väljastab kuusnurga tippude koordinaadid. Paraku ise defineeritud geomeetriliste objektide kujutamiseks `geom_point()` ei sobi. 
+
+Näpunäited:
+
+* uuri, mida teeb funktsioon `geom_polygon()`
+* uuri, mida teeb funktsioon `kuusnurk` ühe vaatluse korral (st fikseeritud koordinaatide x ja y ning pindala korral)
+* moodusta eelnevalt valitud mängijale vastav uus andmestik, kus olemasoleva andmestiku iga rida on dubleeritud 6 korda, et kuusnurga iga tipu kohta oleks sama info
+* kuusnurkade eristamiseks tuleks lisada grupeeriv tunnus, mida `ggplot` joonist tehes parameetri `group` puhul kasutada
+* kuusnurki saab seest värvida parameetri `fill` abil ja kontuure parameetri `color` abil.
+* uuri, mida teeb funktsioon `scale_fill_gradient2()`
+
+
+
+```{r, fig.height=3,eval=FALSE}
+kuusnurk = function(x, y, pindala){
+    r = sqrt(2*sqrt(3)/9*pindala)
+    x_coord=x+c(0,sqrt(3)/2*r,sqrt(3)/2*r,0,-sqrt(3)/2*r,-sqrt(3)/2*r) 
+    y_coord=y+c(r, r/2, -r/2, -r, -r/2, r/2)
+    return(data.frame(x_kuusnurk=x_coord,y_kuusnurk=y_coord))
+  }
+
+# Sinu kood
+
+```
+
+### Ülesanne 1.6 - shiny rakendus (7 punkti)
+
+Ehita Shiny rakendus, kus kasutaja saab valida meeskonna ja valitud meeskonnas oleva mängija. Seejärel peab rakendus kuvama valitud mängijale vastava viskeprofiili.
+
+Juhend:
+
+1. Tekita esmalt võimalus meeskonna valikuks
+  - Kasuta ui osas funktsiooni `selectInput()`
+  - parameetri *choices* valikuks olgu algandmetes olevate meeskondade nimed tähestiku järjekorras
+  - testi enda jaoks, kas see valik töötab
+2. Tekita juurde võimalus mängija valikuks. Kasutajale kuvatakse vaid neid mängijaid, kes kuuluvad (või on hooaja jooksul kuulunud) valitud meeskonda.
+  - Kasuta ui osas funktsiooni `selectInput()`
+  - parameetri *choices* väärtuseks olgu esialgu tühisõne, st "",
+```{r, eval = FALSE}
+selectInput("mangija", "Vali mängija", choices = "")
+```
+  - `server` funktsioonile lisa juurde parameeter *session*
+```{r, eval = FALSE}
+server <- function(input, output, session) {
+```
+  - kasuta server funktsiooni sees funktsiooni `observe()` (selleks, et kui meeskonna valikut on muudetud, uuendataks ka mängijate nimekirja)
+  - funktsiooni `observe()` sees kasuta omakorda funktsiooni `updateSelectizeInput` (uuri ka, mida see teeb):
+```{r, eval = FALSE}
+  observe({
+
+    # Sinu kood
+    ## Vali välja nende mängijate nimed, kes kuuluvad (või on kuulunud) 
+    ## valitud meeskonda
+    
+    ## mangijad_meeskonnas = ...
+    
+    updateSelectizeInput(session, "mangija",
+                         label = "Vali mängija",
+                         choices = mangijad_meeskonnas,
+                         selected = head(mangijad_meeskonnas, 1))
+  })
+```
+  - `observe()` sisuks on jälgida, kas mõni temas sisalduv sisendi väärtus on muutunud (antud kontekstis meeskonna valik). Kui on, siis jooksutatakse läbi kogu observe() funktsioonis sisalduv kood.
+  - Kontrolli, kas kood töötab nii nagu vaja.
+3. Väljasta valitud meeskonna ja mängija viskeprofiili joonis (vt ülesanne 5).
+4. Eemalda jooniselt kõik üleliigne (telgede tekst, tick’d, joonise raam ja ruudustik (grid)). Kasuta selleks funktsiooni `theme()`.
+
+Lõplik tulemus võiks välja nähe umbes selline:
+
+![](Shiny_kuva.png "Shiny")
+
+
+
+### Boonusülesanne B1.1 - mängijate valik (2 punkt)
+
+Muuda mängijate valikut selliselt, et mängijaid kuvatakse vastavalt sooritatud visete arvule (rohkem viskeid teinud mängijad eespool).
+
+### Boonusülesanne B1.2 - geomeetria (1 punkt)
+
+Kui võrrelda meie kuusnurki NY Times'i omadega, siis on näha, et NY Times'i omi on 90 kraadi pööratud. Muuda funktsiooni `kuusnurk()` selliselt, et selle väljundiks olev kuusnurk oleks 90 kraadi pööratud.

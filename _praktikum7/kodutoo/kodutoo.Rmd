@@ -1,0 +1,38 @@
+---
+title: "Kodutöö"
+output: 
+  html_document:
+    theme: null
+---
+
+# I osa
+
+(**19 punkti**) Lahenda praktikumis alustatud [biomarkerite ülesanded](../praktikum7_biomarkerid).
+
+# II osa
+
+Järgmises praktikumis tegeleme dopingutesti uurimisega. Järgnev video ja artikkel annavad sissejuhatuse teemasse. 
+
+### Ülesanne 2.1 (**2 punkti**) 
+
+Vaata videot [The tradeoff between sensitivity and specificity](https://www.youtube.com/watch?v=vtYDyGGeQyo) statistilise testi tundlikkuse ja spetsiifilisuse kohta. 
+
+* Mida näitab statistilise testi tundlikkus (*sensitivity*)? 
+Kuidas saavutada 100\% tundlikkus?
+* Miks räägitakse kompromissi leidmisest tundlikkuse ja spetsiifilisuse vahel (*tradeoff between sensitivity and specificity*)?
+
+### Ülesanne 2.2 (**4 punkti**) 
+Loe Krista Fischeri ja Donald A. Berry artiklit [Statisticians Introduce Science to International Doping Agency: The Andrus Veerpalu Case](http://chance.amstat.org/2014/09/doping/) ning vasta järgmistele küsimustele.
+
+* Sportlase verest mõõdeti kasvuhormooni (*hGH*) kahte isovormi *recGH* ja *pitGH*. Millist teststatistikut kasutati? (Vihje: testi nimetati *hGH Isoform Ratio Test*)
+* Artiklis (sektsioonis *The hGH Doping Test*) on välja toodud neli eeldust, mis peaksid dopingutesti korral olema täidetud. Nimeta nende seast kaks ning selgita kummagi kohta lühidalt, miks need olulised on. 
+* Oleme koostanud [skeemi](../examples/doping.png), mis võtab kokku artiklis kirjeldatud protsessi otsustuspiiride paikapanekust ja verifitseerimisest. Täida skeemis olevad lüngad a ja b. 
+* Millised statistilised möödapanekud esinesid kasvuhormooni dopingutestis? Nimeta kaks.
+
+# Mida on vaja esitada?
+
+* I ja II osa kohta tuleb esitada vastustega [Jupyter fail](../kodutood/kodutoo7.ipynb). 
+* Lisaks palun kirjuta Jupyter faili, kui palju aega kulus I ja II osa peale. Kas logistiline regressioon ja mitmese testimise korrektsioon olid sinu jaoks uued mõisted? Kuivõrd arusaadav oli nende idee? Mida arvad ülesannetest (kasulikkus, huvitavus)?
+
+
+Lahendused esitada [Moodle keskkonna](https://moodle.ut.ee/course/view.php?id=8013#section-1) kaudu.

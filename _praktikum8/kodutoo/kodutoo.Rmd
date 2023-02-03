@@ -1,0 +1,16 @@
+---
+title: "Kodutöö"
+output: 
+  html_document:
+    theme: null
+---
+
+(**25 punkti**) Lahenda praktikumis alustatud [dopingutesti ülesanded](../praktikum8_doping).
+
+
+# Mida on vaja esitada?
+
+* Kodutööks tuleb esitada vastustega [Jupyter fail](../kodutood/kodutoo8.ipynb).
+
+
+Lahendused esitada [Moodle keskkonna](https://moodle.ut.ee/course/view.php?id=8013#section-1) kaudu.
