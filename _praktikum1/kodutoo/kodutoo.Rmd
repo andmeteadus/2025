@@ -5,7 +5,7 @@ output:
     theme: null
 ---
 
-**Kodutöö esitamiseks lae alla [Jupyter Notebook fail ja abifail](../kodutood/kodutoo1.ipynb).**
+**Kodutöö esitamiseks lae alla [R Markdown fail](../kodutood/kodutoo1.Rmd).**
 
 # I osa - veebiloengud, videod, artiklid (5 punkti)
 
