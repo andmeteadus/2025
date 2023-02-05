@@ -61,10 +61,9 @@ Lisaks praktikumidele sisaldab õppeaine järgnevaid komponente:
 * **Kodutööd:** Kokku antakse 8 kodutööd (igaüks 25 punkti). 
   * Kodutöö sisaldab enamasti andmete analüüsimist, visualiseerimist jne. Iga kodutöö tulemuseks on [knitr](http://yihui.name/knitr/)-i raport koos R-i koodi ning kommentaaridega. 
   * Kodutöö võib sisaldada ka küsimusi iseseisvalt õpitu (näiteks videoloengu) kohta. 
-  * Kodutööde esitamine käib läbi Moodle'i ja tähtaeg on 1 nädal. Kui kodutöö esitatakse pärast tähtaega, siis on võimalik seda esitada veel 1 nädala jooksul aga trahv -50% punktidest.
-* **Projekt:** Lisaks tuleb läbi viia üks praktiline andmeanalüüs ning kirjutada populaarteaduslikus vormis artikkel saadud tulemustest. 
-Artikkel on illustreeritud asjakohaste joonistega ning on arusaadav ka mittestatistikule. 
-Projekti võib teha kas üksinda või paaristööna. Tulemusi on vaja esitleda suulisel kaitsmisel. Soovi korral võib tutvuda [2020.](https://andmeteadus.github.io/2020/projektid/) ja [2021.](https://andmeteadus.github.io/2021/projektid/) aasta projektidega.
+  * Kodutööde esitamine käib läbi Moodle'i ja tähtaeg on 1 nädal. Võlgnevuste likvideerimine kokkuleppel õppejõuga.
+* **Projekt:** Lisaks tuleb läbi viia üks praktiline andmeanalüüs, mille põhjal tuleb kas kirjutada populaarteaduslikus vormis artikkel või luua Shiny rakendus saadud tulemustest.
+Projekti võib teha kas üksinda või grupitööna. Tulemusi on vaja esitleda suulisel kaitsmisel. Soovi korral võib tutvuda [varasemalt tehtud projektidega](https://andmeteadus.github.io/2023/projekt_juhend/).
  * Iga projekti esitanud tudeng(id) saavad ühe (juhusliku) kaastudengi(te) projekti retsenseerimiseks.
 
 Aine läbimiseks on vaja:
@@ -83,9 +82,9 @@ Aine läbimiseks on vaja:
 
 # Tunniplaan
 
-Õppeaine toimub 2021/2022. õppeaasta kevadsemestril. 
+Õppeaine toimub 2022/2023. õppeaasta kevadsemestril. 
 
-* **Praktikumid 1. rühmal esmaspäeviti kell 10:15 ruumis 2004 ja 2. rühmal teisipäeviti kell 14:15 ruumis 2030**.
+* **Praktikumid 1. rühmal reedeti kell 08:15 ruumis 2004 ja 2. rühmal teisipäeviti kell 10:15 ruumis 2004.
 * **Projekti tähtaeg: TBD**
 * **Projektide ettekandmine: TBD**
 

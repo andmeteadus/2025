@@ -1,10 +1,50 @@
 ---
+title: "Kodutöö 1"
 output: 
-  html_document:
-    theme: null
+  html_document
 ---
 
-# Kodutöö 1 osa II
+# I osa - veebiloengud, videod, artiklid (5 punkti)
+
+1.  (**2 punkti**) Vaata Johns Hopkinsi reprodutseeritava analüüsi videosid:
+
+-   [Reproducible Research: Concepts and Ideas (Part 1/3)](https://www.youtube.com/watch?v=4rBX6r5emgQ&index=1&list=PLjTlxb-wKvXOU4WW4p3qc4VKWTI4gLNUf)
+-   [Reproducible Research: Concepts and Ideas (Part 2/3)](https://www.youtube.com/watch?v=GXSRP--d3Q4&index=2&list=PLjTlxb-wKvXOU4WW4p3qc4VKWTI4gLNUf)
+-   [Reproducible Research: Concepts and Ideas (Part 3/3)](https://www.youtube.com/watch?v=bwQWhZQmDuc&list=PLjTlxb-wKvXOU4WW4p3qc4VKWTI4gLNUf&index=3)
+
+Vasta järgmistele küsimustele:
+
+-   Selgitage, mida tähendab, et *reprodutseeritav analüüs* on kompromiss *uuringu replikeerimise* ja *mitte millegi* vahel.
+
+**SINU VASTUS:**
+
+-   Mis on sinu arvates reprodutseeritava analüüsi suurim väljakutse? Põhjenda. Kuidas sellega toime tulla?
+
+**SINU VASTUS:**
+
+2.  (**1 punkt**) Vaata videot [Data Management Course: Sharing your data](https://www.youtube.com/watch?v=eUC7MweyyFA)
+
+Vasta järgmisele küsimusele:
+
+-   Nimeta vähemalt 3 olulist aspekti seoses andmete talletamise ning andmehaldusega, millele videos viidati.
+
+**SINU VASTUS:**
+
+3.  (**2 punkti**) Loe artiklit [Researchers Finally Replicated Reinhart-Rogoff, and There Are Serious Problems](https://seekingalpha.com/article/1345701-researchers-finally-replicated-reinhart-rogoff-and-there-are-serious-problems).
+
+Artikkel kirjeldab majandusteadlaste Reinhart'i ja Rogoff'i 2010. aasta publikatsiooni *Growth in a Time of Debt* ning mis vigu riigivõla ja majanduskasvu uurimisel tehti. Järgmises praktikumis uurime sama andmestikku, mida käsitleti ka Reinhart'i ja Rogoff'i artiklis.
+
+Vasta järgmistele küsimustele:
+
+-   Nimeta, mis oli Reinhart'i ja Rogoff'i artikli üks olulisemaid tulemusi.
+
+**SINU VASTUS:**
+
+-   Millel põhines teadlaste Herndon'i, Ash'i ja Pollin'i kriitika majandusteadlaste Reinhart'i ja Rogoff'i teadusartiklile *Growth in a Time of Debt.* (nimeta 3 probleemi).
+
+**SINU VASTUS:**
+
+# II osa - andmete analüüs (20 punkti)
 
 ## Sissejuhatus
 
@@ -20,7 +60,7 @@ Eesmärgiks on koostada automaatselt uuenev raport, kus on:
 -   aktsiaturu ülevaade sektorite lõikes;
 -   aktsiate ostusoovitused.
 
-Andmetabelist info kättesaamiseks kasutame R-i paketti *dplyr*. Selle paketi kohta loe täpsemalt [praktikumimaterjalist](../praktikum1_dplyr) ning uuri sealseid minimalistlikke näiteid.
+Andmetabelist info kättesaamiseks kasutame R-i paketti *dplyr*. Selle paketi kohta loe täpsemalt praktikumimaterjalist ning uuri sealseid minimalistlikke näiteid.
 
 ## Ülevaade andmestikust
 
@@ -35,7 +75,7 @@ Andmestikus on näidatud 505 ettevõtte (kõik need ettevõtted, mis on kuulsas 
 -   *kasum_aktsia_kohta*: ettevõtte aastakasum / aktsiate koguarv
 -   *dividend_aktsia_kohta*: väljamakstud dividendid aastas / aktsiate koguarv
 
-Lae alla andmestik [Aktsiad 2022.csv](../data/Aktsiad%202022.csv) ning loe andmestik töökeskonda.
+Lae alla andmestik [Aktsiad 2022.csv](https://andmeteadus.github.io/2023/data/Aktsiad%202022.csv) ning loe andmestik töökeskonda.
 
 ## Kodutöö raport
 
@@ -55,6 +95,11 @@ Kõigepealt leia kolm kõige suurema päevase tootlusega aktsiat ning väljasta 
 Seejärel leia kolm kõige madalama päevase tootlusega aktsiat ning väljasta nende kohta samasugune info.
 
 Näpunäide: Abiks on funktsioonid `arrange()`, `select()` ja `top_n()`.
+
+```{r}
+# SINU LAHENDUS
+
+```
 
 ### Ülesanne 2 (5 punkti) - Ülevaade sektorite lõikes
 
@@ -79,6 +124,11 @@ Juhised:
         Näpunäide 2: Summade ja keskmiste arvutamisel ära võta arvesse puuduvaid väärtusi (puuduvate väärtuse välja jätmiseks võib funktsioonide `sum` ja `mean` argumendi `na.rm` väärtuseks seada `TRUE`).
 -   Näita ainult neid sektoreid, kus on vähemalt 30 ettevõtet.
 -   Sorteeri tabel tunnuse *kogukäive* alusel kahanevalt.
+
+```{r}
+# SINU LAHENDUS
+
+```
 
 ### Ülesanne 3 (5 punkti) - kauplemisalgoritm
 
@@ -122,31 +172,28 @@ Juhised:
 
 Kui eelnev töötab, siis kirjuta eelnev kood funktsiooniks.
 
+Kasutades funktsiooni *kauplemisalgoritm_turvaline*, väljasta 3 ostusoovitust.
+
 ```{r, eval=FALSE}
 kauplemisalgoritm_turvaline = function(x){
   # sinu kood
 }
 ```
 
-Kasutades funktsiooni *kauplemisalgoritm_turvaline*, väljasta 3 ostusoovitust.
-
 ### Ülesanne 5 (5 punkti) - raporti vormistamine
 
-Vormistage eelnevate ülesannete lahendused selliseks *knitr* raportiks (html või pdf formaadis), et
+Vormistage eelnevate ülesannete lahendused raportiks nii, et
 
 -   Kõik andmestike väljatrükid oleks toodud tabelitena. Selleks kasuta näiteks funktsiooni `kable`. (Näpunäide: funktsiooni `kable` kasutades saab komakohtade arvu määrata parameetri `digits` abil ja selleks, et suured arvud paremini loetavad oleks, saab täiendava argumendina lisada `format.args = list(big.mark = " ")`, mis lisab tuhandeliste vahele tühiku. Selleks, et vabaneda teaduslikust arvuformaadist, st arvu eksponentkujul esitamisest, tuleb koodi algusesse lisada `options(scipen=1000)`.)
+
 -   Ostusoovitus (ül 4 tulemus) lisage teksti sisse reasisese R-i koodi abil (*inline R code*).
--   Ära raportis R-i koodi (ega muud müra) näita. Koodi väljajätmiseks kasuta näiteks iga koodibloki päises valikut `echo=FALSE`. Teine variant on muuta globaalseid sätteid, kus lisad `.Rmd` faili algusesse
 
-```{r, echo=FALSE}
-library(knitr)
-opts_chunk$set(message=FALSE, warning = FALSE)
+-   Ära raportis R-i koodi (ega muud müra) näita. Koodi väljajätmiseks kasuta näiteks iga koodibloki päises valikut `echo=FALSE`. Oodatud tulemus on toodud ära [praktikumi lehel](https://andmeteadus.github.io/2023/praktikum1_aktsiad/).
+
+```{r}
+# SINU LAHENDUS
+
 ```
-### Näidisraport
-
-Raport võiks välja näha umbes selline (pildil ei ole näidatud ilmtingimata õiged väärtused):
-
-![](kodutoo1_naide2.png "Näide")
 
 ### Boonusülesanne 1 (1 punkt): raporti täiendamine
 
@@ -179,3 +226,7 @@ aktsiad_wiki$symbol = gsub(".", "-", aktsiad_wiki$symbol, fixed = TRUE)
 ```
 
 -   ühenda Wikist laetud andmestik Yahoo'st saadud andmestikuga tunnuse *symbol* alusel (vt`?join` või `?merge`)
+
+# Kodutöö lõpp
+
+## Esita Moodlesse nii .Rmd fail kui ka knitr abil loodud .html väljund.
