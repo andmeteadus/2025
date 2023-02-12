@@ -29,7 +29,7 @@ Lahenda [pettuse tuvastamise ülesanded](../praktikum2_pettus).
 
 # Mida on vaja esitada?
 
-* I, II ja III osa kohta tuleb esitada [Jupyter Notebook fail](../kodutood/kodutoo2.ipynb).
+* I, II ja III osa kohta tuleb esitada [R Markdown fail](../kodutood/kodutoo2.Rmd).
 
 Lahendused esitada [Moodle keskkonna](https://moodle.ut.ee/course/view.php?id=8013#section-1) kaudu.
 
