@@ -84,7 +84,7 @@ Aine läbimiseks on vaja:
 
 Õppeaine toimub 2022/2023. õppeaasta kevadsemestril. 
 
-* **Praktikumid 1. rühmal reedeti kell 08:15 ruumis 2004 ja 2. rühmal teisipäeviti kell 10:15 ruumis 2004.**
+* **Praktikumid 1. rühmal reedeti kell 08:15 ruumis 2004 ja 2. rühmal kolmapäeviti kell 10:15 ruumis 2004.**
 * **Projekti tähtaeg: TBD**
 * **Projektide ettekandmine: TBD**
 
