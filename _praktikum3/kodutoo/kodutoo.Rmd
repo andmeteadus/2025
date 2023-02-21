@@ -10,7 +10,8 @@ output:
 
 # Mida on vaja esitada?
 
-* Ülesande 3 kohta tuleb esitada zip fail, kus oleks kõik, mis vajalik shiny rakenduse töötamiseks, sealhulgas *app.R* (või *server.R* ja *ui.R*) ning andmestiku fail. **NB! Nimeta fail ümber kujule `<matrikli nr>_app.R` või `<matrikli nr>_ui.R`/`<matrikli nr>_server.R` (nt A12345_app.R).**
-* Ülejäänud ülesannete kohta tuleb esitada andmeanalüüsi kood [Jupyter Notebook failis](../kodutood/kodutoo3.ipynb).
+1. Ülesannete 1 ja 2 kohta täidetud [R Markdown fail](../kodutood/kodutoo3.Rmd) koos html väljundiga.
+
+2. Ülesande 3 shiny rakenduse fail *app.R* (või *server.R* ja *ui.R*).
 
 Lahendused esitada [Moodle keskkonna](https://moodle.ut.ee/course/view.php?id=8013#section-1) kaudu.

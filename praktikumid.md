@@ -49,10 +49,11 @@ Joonised paketiga ggplot2: erinevad joonisetüübid. Interaktiivsed rakendused p
 
 * Praktikumis kasutatud materjalid:
     * [tidyr minimalistlik näide](../praktikum3_tidyr)
-    * [graafikute tajumise ülesanne](../praktikum3_quiz2) ja [jaotuste ära arvamise ülesanne](../praktikum3_quiz1)
+    <!-- * [graafikute tajumise ülesanne](../praktikum3_quiz2) ja [jaotuste ära arvamise ülesanne](../praktikum3_quiz1) -->
 	* [Millist graafikut kasutada?](https://www.youtube.com/watch?v=6lm4wJ1qm0w)
 	* [Millist graafikut millal kasutada vastvalt andmetüübile?](https://raw.githubusercontent.com/ft-interactive/chart-doctor/master/visual-vocabulary/poster.png)
 		* [_Eelmise punkti detailsem seletus_](https://github.com/ft-interactive/chart-doctor/tree/master/visual-vocabulary)
+	* [R abi jooniste tegemisel](https://r-graph-gallery.com/index.html)
 * [Õppetulemuste visualiseerimise ülesanded](../praktikum3_oppeained)
 * [Kodutöö](../praktikum3_kodutoo)
     * Tähtaeg 05.03.2023 kell 23:59.

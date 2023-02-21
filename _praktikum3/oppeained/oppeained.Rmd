@@ -79,7 +79,7 @@ plot_oppeained = function(data, yksus, sem){
 
 ### Ülesanne 3 (17 punkti) - Rakenduse loomine
 
-Alusta Shiny tutorialiga http://shiny.rstudio.com/tutorial/. Võimalusel on soovitatav läbi vaadata *Part 1* ja *Part 2* videod, kuid kodutöö sooritamiseks on piisav kasutada lehe lõpus olevaid *Shiny in seven lessons* materjale.
+Alusta Shiny tutorialiga http://shiny.rstudio.com/tutorial/. Võid uurida ka muid materjale, kuid kodutöö sooritamiseks on piisav kasutada **Get Started -> Shiny Basics** õpetusi.
 
 1. Tööta läbi *lesson 1*. Juhime tähelepanu järgnevale.
     - Kui sul ei tekkinud nuppu *Run App*, siis sulge RStudio ning ava uuesti. 
