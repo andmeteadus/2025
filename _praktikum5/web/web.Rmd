@@ -42,7 +42,7 @@ Suur vihje on olemas eelneva html koodi < style > blokis. Abiks võib-olla ka [C
 
 ```{r}
 # Ülesanne 1.1
-url = "https://andmeteadus.github.io/2021/examples/html1.html"
+url = "https://andmeteadus.github.io/2023/examples/html1.html"
 
 # sinu kood
 ```
@@ -91,7 +91,7 @@ Eralda [html koodis](../examples/html2.html) punaselt olev tekst muutujasse `tek
 
 ```{r}
 # Ülesanne 1.2
-url = "https://andmeteadus.github.io/2021/examples/html2.html"
+url = "https://andmeteadus.github.io/2023/examples/html2.html"
 
 # sinu kood
 ```
@@ -234,15 +234,14 @@ Näpunäide:
 
 ### Ülesanne 1.8 (3 punkti)
 
-> Eva "Usin" Masin on lotohuviline, aga ta pole aastaid Viking Lottoga võitnud. Ta arvab, et lototulemused pole päris juhuslikud ning lotos on võimalik statistiline eelis saada.
-Seepärast märgib ta iga lotokolmapäev Viking Lotto loositud numbrid üles ja uurib, kas number kahtesid loositakse rohkem välja, kui juhus lubaks.
+> Eva "Usin" Masin on lotohuviline, aga ta pole aastaid Eurojackpotiga võitnud. Ta arvab, et lototulemused pole päris juhuslikud ning lotos on võimalik statistiline eelis saada.
+Seepärast märgib ta iga lotokolmapäev Eurojackpoti loositud numbrid üles ja uurib, kas number kahtesid loositakse rohkem välja, kui juhus lubaks.
 
 1) Õpeta tehis-Eva tegema seda sama.
 
-* Eesti Loto veebilehel on toodud [statistika loositud pallide sagedusest](https://www.eestiloto.ee/osi/stats.do?lastDraws=250&gameCode=11&sort=frq0&action=searchNumbers).
-* Eralda Vikinglotto põhinumbrite tabel, kus veergudes on tunnused *Number*, *Sagedus* ja *Sagedus protsentides*.
-* selectorgadget võib sind siin alt vedada ning kergem on lähtekoodi inspekteerida brauseris olevate tööriistadega (Chrome's vajuta `Ctrl + Shift + I` või tee parem klikk ja vajuta inspekteeri elementi).
-* Visualiseeri saadud andmetabelit. Tee näiteks tulpdiagramm, kus x-teljel on arvud 1-48 ning y-telg tähistab sagedust.
+* Eurojackpoti veebilehel on toodud [statistika loositud pallide sagedusest](https://www.euro-jackpot.net/et/statistika/numbrite-sagedused).
+* Eralda põhinumbrite tabel.
+* Visualiseeri saadud andmetabelit. Tee näiteks tulpdiagramm, kus x-teljel on arvud 1-50 ning y-telg tähistab sagedust. Või tee joonis, mis illustreeriks numbrite viimati loosimist näiteks kuupäeva või tulba "Päev(a) tagasi" alusel.
 
 ```{r}
 # Ülesanne 1.8
@@ -251,7 +250,7 @@ Seepärast märgib ta iga lotokolmapäev Viking Lotto loositud numbrid üles ja 
 ```
 
 
-2) (**Boonusülesanne 1.2 (3 punkti)**) Viimase 250 loosiga on pall 35 tulnud 18 korral, pall 2 aga 43 korral. Uuri, kas on alust arvata, et Viking Lotto süsteem on kallutatud. Selleks mõtle välja, kuidas seda kontrollida (näiteks võid kasutada simulatsioonidel põhinevat lähenemist). Selgita lühidalt oma lähenemist ja raporteeri, millise tulemuse said. Visualiseeri saadud tulemust.
+2) (**Boonusülesanne 1.2 (3 punkti)**) Viimase 250 loosiga on pall 35 tulnud 18 korral, pall 2 aga 43 korral. Uuri, kas on alust arvata, et Eurojackpoti süsteem on kallutatud. Selleks mõtle välja, kuidas seda kontrollida (näiteks võid kasutada simulatsioonidel põhinevat lähenemist). Selgita lühidalt oma lähenemist ja raporteeri, millise tulemuse said. Visualiseeri saadud tulemust.
 
 
 ### Boonusülesanne 1.3 (5 punkti) - Kas kõik teed viivad Facebooki? (ehk juhuslik ekslemine veebilehtedel)

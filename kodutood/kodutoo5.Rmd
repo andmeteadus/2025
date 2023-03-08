@@ -1,0 +1,220 @@
+---
+title: "Kodutöö 5"
+output: 
+  html_document
+---
+
+# I osa (**21 punkti**)
+
+### Sissejuhatus
+
+Eva "Usin" Masin on esimeses praktikumis kohatud Mati "Raha" Masina vastand. Talle meeldib rutiinsus, andmete tuim kopeerimine ja sisestamine. Vabal ajal meeldib talle lugeda romaanisarja "Tõde ja õigus" - eelmine nädal luges ta kokku tähekombinatsiooni "pa" esinemissageduse. Homme pärast tööd jätkab ta "pb" esinemissageduse leidmisega.
+
+Õnneks oli eelnev tekst fiktsioon ja Eva-laadsed kopeerijad surid välja koos neandertaallastega. Selles praktikumis vaatame, kuidas R-is ellu äratada tehis-Eva, kes oskab veebilehtedelt automaatselt infot eraldada ja selle transformeerida struktureeritud andmestikuks.
+
+Täpsemalt, uurime
+
+-   kuidas eraldada Riigikogu hääletamistulemusi,
+-   kuidas eraldada Postimehe uudiste pealkirju,
+-   kuidas eraldada ilmajaama vaatlusandmeid,
+-   kuidas lotot mängides rikastuda?
+
+![](https://raw.githubusercontent.com/andmeteadus/2023/main/_praktikum5/web/veebi_kraapimise_naide.png "Näide")
+
+Kaks esimest ülesannet õpetavad paketi *rvest* funktsionaalsust ja annavad sissejuhatuse veebikraapimisse minimalistlike veebilehtede põhjal.
+
+### Ülesanne 1.1 (2 punkti) - CSS id
+
+Eralda [html koodis](https://andmeteadus.github.io/2023/examples/html1.html) sinisena olev tekst muutujasse `tekst`. Kasuta paketti *rvest*.
+
+![](https://raw.githubusercontent.com/andmeteadus/2023/main/_praktikum5/web/veebi_kraapimine_ex2.png "Näide")
+
+-   Vastava html koodiga saad mängida [siin](http://www.w3schools.com/html/tryit.asp?filename=tryhtml_css_id).
+
+-   Loe lühiülevaadet, millest koosnevad veebilehed ja uuri paketi *rvest* minimalistlikku näidet [siit](https://andmeteadus.github.io/2023/praktikum5_rvest_minimal/).
+
+-   Minimalistliku näite põhjal peaksid oskama eraldada lähtekoodis olevad 4 lõiku. Et eraldada lõik, kus id="p01", pead teadma, kuidas CSS-is tähistatakse id-sid. Suur vihje on olemas eelneva html koodi \< style \> blokis. Abiks võib-olla ka [CSS selektorite interaktiivne testnäide](http://www.w3schools.com/cssref/trysel.asp).
+
+-   Uuri paketi [*rvest* dokumentatsiooni](http://cran.r-project.org/web/packages/rvest/rvest.pdf). Kasuks tulevad funktsioonid `read_html`, `html_node`, `html_nodes` ja `html_text`.
+
+-   Lõpptulemus peaks olema selline: `tekst = c("I am different.")`
+
+```{r}
+# Ülesanne 1.1
+url = "https://andmeteadus.github.io/2023/examples/html1.html"
+
+# sinu kood
+```
+
+-   (**1 boonuspunkt**) CSS selektorite õppimiseks on tore tutorial <http://flukeout.github.io/>. Tee läbi esimesed 6 taset ja lisa vastused tekstina kodutöö raportisse.
+
+**SINU VASTUS:**
+
+### Ülesanne 1.2 (2 punkti) - CSS class
+
+Eralda [html koodis](https://andmeteadus.github.io/2023/examples/html2.html) punaselt olev tekst muutujasse `tekst`. Kasuta paketti *rvest*.
+
+![](https://raw.githubusercontent.com/andmeteadus/2023/main/_praktikum5/web/veebi_kraapimine_ex1.png "Näide")
+
+-   Vastava html koodiga saad mängida [siin](http://www.w3schools.com/html/tryit.asp?filename=tryhtml_css_class).
+
+-   Lõpptulemuse peaks olema selline: `tekst = c("I am different.", "I am different too.")`
+
+```{r}
+# Ülesanne 1.2
+url = "https://andmeteadus.github.io/2023/examples/html2.html"
+
+# sinu kood
+```
+
+### Ülesanne 1.3 (3 punkti)
+
+> Margus "Maru" Rahvus on aus Eesti mees - ta aretab aias sini-must-valgeid ülaseid; mobiiltelefoni helinaks on tal "Eestlane olen ja eestlaseks jään" ja maksud on tal juba 3 aasta jagu ette ära makstud, et ikka kodumaa õitseks. Veebruaris 2021 oli ta pühaviha täis kui sai teada, et [Riigikogus lükkas tagasi eelnõu](https://www.riigikogu.ee/tegevus/tooulevaade/haaletused/haaletustulemused-kohalolekukontroll/905a7f22-99c0-4188-8bb6-0fe9125127a2), mis oleks ometi viinud ta lähemale Eesti Vabariigi presidendi otsevalimisteni. Juba aastaid on ta tahtnud valida selleks oma kalli naise Eevi "Emakaru" Rahvuse, et siis uhketel paraadidel ja ballidel kaasas käia, nautida esihärra head elu ja Kadriorus Pätsi pronksbüsti pead paitada.
+>
+> Margusel on plaanis kirjutada kiri kõikidele rahvasaadikutele, kes eelnõu vastu hääletasid, et pärida nende otsuse tagamaad. Ta pöördub Eva "Usin" Masina poole, kes on *copy-paste* vallas kibe käpp.
+
+Automatiseeri see protsess. Eralda ülal toodud Riigikogu hääletamistulemuste veebilehelt (lähtekoodi nägemiseks paremklikk ja Wiew Page Source), mitu saadikut hääletas Marguse ammuihaldatud eelnõu:
+
+-   poolt
+-   vastu
+-   oli erapooletu
+-   ei hääletanud
+
+> Praktikumis tutvusime, kuidas brauseri veebiarenduse tööriistadega leida üles lähtekoodist vajalikud kohad. Variandid olid:
+>
+> -   Chrome'is vajuta parem klikk ja "inspekteeri elementi". Alernatiivid on klahvikombinatsioon Ctrl + Shift + I või klahv F12.
+> -   vahendiga [selectorgadget](http://selectorgadget.com/)
+>
+> Need muudavad lähtekoodis õige klassi, id või sildi leidmise oluliselt lihtsamaks. Mõnes olukorras on kasulikum üks variant, mõnes teine.
+
+Vihjed:
+
+-   Väärtuste eraldamiseks kasuta atribuuti *href*. Uuri, kuidas eraldada atribuute CSS-i õppimise *tutorialist* <http://flukeout.github.io/> (alates levelist 27).
+
+-   Kasutada paketi *readr* funktsiooni `parse_number()` kui sa ei taha regulaaravaldistega mässata. Vaata näiteks, mida teeb järgmine koodirida `"Kokku: 101 liiget" %>% parse_number()`
+
+```{r}
+# Ülesanne 1.3
+url = "https://www.riigikogu.ee/tegevus/tooulevaade/haaletused/haaletustulemused-kohalolekukontroll/905a7f22-99c0-4188-8bb6-0fe9125127a2"
+
+# sinu kood
+
+```
+
+### Ülesanne 1.4 (3 punkti)
+
+Eralda eelnõu hääletamistulemuste andmetabel, kus on 101 rida ja tunnused *Nimi*, *Otsus* ja *Fraktsioon*.
+
+Vihjed:
+
+-   kasuta funktsiooni `html_table`,
+-   tabelis veeru *Otsus* puhastamiseks saab kasutada näiteks paketi *stringr* funktsiooni `str_split_fixed()`.
+
+```{r}
+# Ülesanne 1.4
+ # sinu kood
+  
+```
+
+### Ülesanne 1.5 (2 punkti)
+
+Visualiseeri, kuidas jaotusid otsused fraktsioonide lõikes.
+
+```{r}
+# Ülesanne 1.5
+ # sinu kood
+  
+```
+
+### Ülesanne 1.6 (3 punkti)
+
+> Eva "Usin" Masin töötab start-upis, mis lubab Eesti turule tuua unikaalse personaalse uudisterakenduse, mis filtreerib uudiseid vastavalt kasutaja soovidele. Eva "Usin" Masin pandi koostama andmebaasi Postimehe esilehe uudiste kohta. Eva teab, kuidas karjääriredelis ülespoole ronida: "Bossi käsu peale olgu uudiste pealkirjad võimalikult kiiresti olemas".
+
+Automatiseeri seesama protsess. Tagasta kõik Postimehe esilehe uudiste pealkirjad (joonisel näidatud kollasega).
+
+-   Ära kurvasta, kui sa ei saa absoluutselt kõiki pealkirju, 97% on praegu piisav.
+-   Kui sulle ei meeldi Postimehe veebilehe hiiglaslikku lähtekoodi inspekteerida brauseris vaikimisi olevate vahenditega, siis abiks on praktikumis tutvustatud tööriist [selectorgadget](http://selectorgadget.com/).
+-   Vaata, et sinu tagastatud pealkirjade hulgas poleks tühju sõnesid või arve.
+
+![](https://raw.githubusercontent.com/andmeteadus/2023/main/_praktikum5/web/postimees_example.png "Näide")
+
+```{r}
+# Ülesanne 1.6
+url = "http://www.postimees.ee/"
+
+# sinu kood
+```
+
+### Ülesanne 1.7 (3 punkti)
+
+> Eva "Usin" Masinal on suur huvi ilmaandmete vastu. Kümme minutit pärast iga täistundi märgib ta Ilmateenistuse vaatlusandmeid oma märkmikku, et hiljem analüüsi teha.
+
+Automatiseeri seesama protsess.
+
+Juhised:
+
+-   Riigi Ilmateenistus pakub värskeid [ilmaandmeid XML faili kujul](http://www.ilmateenistus.ee/teenused/ilmainfo/eesti-vaatlusandmed-xml/).
+-   Meie tegeleme [Eesti vaatlusandmete XML failiga](http://www.ilmateenistus.ee/ilma_andmed/xml/observations.php).
+-   Saa XML failist kätte iga ilmajaama õhurõhk.
+-   Saa XML failist kätte iga ilmajaama tuule kiirus.
+-   Tee neist õhurõhu ja tuule kiiruse *scatterplot*.
+
+Näpunäide:
+
+-   Uuri paketi [*rvest* minimalistlikku näidet info eraldamisest XML failist](https://andmeteadus.github.io/2023/praktikum5_rvest_minimal/).
+
+```{r}
+# Ülesanne 1.7
+# sinu kood
+
+```
+
+### Ülesanne 1.8 (3 punkti)
+
+> Eva "Usin" Masin on lotohuviline, aga ta pole aastaid Eurojackpotiga võitnud. Ta arvab, et lototulemused pole päris juhuslikud ning lotos on võimalik statistiline eelis saada. Seepärast märgib ta iga lotokolmapäev Eurojackpoti loositud numbrid üles ja uurib, kas number kahtesid loositakse rohkem välja, kui juhus lubaks.
+
+1)  Õpeta tehis-Eva tegema seda sama.
+
+-   Eurojackpoti veebilehel on toodud [statistika loositud pallide sagedusest](https://www.euro-jackpot.net/et/statistika/numbrite-sagedused).
+-   Eralda põhinumbrite tabel.
+-   Visualiseeri saadud andmetabelit. Tee näiteks tulpdiagramm, kus x-teljel on arvud 1-50 ning y-telg tähistab sagedust. Või tee joonis, mis illustreeriks numbrite viimati loosimist näiteks kuupäeva või tulba "Päev(a) tagasi" alusel.
+
+```{r}
+# Ülesanne 1.8
+# sinu kood
+
+```
+
+2)  (**Boonusülesanne 1.2 (3 punkti)**) Viimase 250 loosiga on pall 35 tulnud 18 korral, pall 2 aga 43 korral. Uuri, kas on alust arvata, et Eurojackpoti süsteem on kallutatud. Selleks mõtle välja, kuidas seda kontrollida (näiteks võid kasutada simulatsioonidel põhinevat lähenemist). Selgita lühidalt oma lähenemist ja raporteeri, millise tulemuse said. Visualiseeri saadud tulemust.
+
+### Boonusülesanne 1.3 (5 punkti) - Kas kõik teed viivad Facebooki? (ehk juhuslik ekslemine veebilehtedel)
+
+Alusta suvaliselt veebilehelt. Eralda kõik väljuvad lingid. Vali üks neist linkidest suvaliselt. Hüppa sellele lingile. Kui sellel leheküljel pole ühtegi väljuvat linki, mine tagasi. Kui väljuvaid linke on mitmeid, vali jälle välja suvaline ja hüppa sinna. Kui jõudsid Facebooki, on katse lõppenud. Korda seda protsessi mitu korda ja erinevate alglehtedega. Uuri, mitmel juhul jõudsid FBsse.
+
+Näpunäide: Abiks on paketi rvest funktsioon `follow_link()`.
+
+# II osa
+
+Järgmises praktikumis kasutame peakomponentanalüüsi, seetõttu seisneb kodutöö II osa peakomponentanalüüsiga tutvumises.
+
+(**2 punkti**) Vaata videot [PCA 1: curse of dimensionality](https://www.youtube.com/watch?v=IbE0tbjy6JQ)
+
+-   Selgita, mida tähendab, et andmestiku tegelik dimensionaalsus võib olla väiksem kui tunnuste arv andmestikus. Too kaks näidet.
+
+**SINU VASTUS:**
+
+(**1 punkt**) Vaata videot [PCA 3: direction of greatest variance](https://www.youtube.com/watch?v=2bV_YQTIJrg)
+
+-   Kuidas valitakse esimese peakomponendi suund (st millise kriteeriumi järgi valitakse esimene peakomponent)?
+
+**SINU VASTUS:**
+
+(**1 punkt**) Vaata Stanfordi masinõppe kursuse videot [Principal Component Analysis Problem Formulation](https://www.youtube.com/watch?v=T-B8muDvzu0)
+
+-   Mida uut said siit videost teada lisaks eelnevale kahele? Kumb meeldis rohkem?
+
+**SINU VASTUS:**
+
+Lisaks võid uurida [Explained Visually: Principal Component Analysis](http://setosa.io/ev/principal-component-analysis/)
+
+## Esita Moodlesse nii .Rmd fail kui ka knitr abil loodud .html väljund.

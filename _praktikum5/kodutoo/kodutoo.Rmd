@@ -37,7 +37,7 @@ Mõtle välja enda projekti teema ja postita see [Moodle's projekti foorumisse](
 
 # Mida on vaja esitada?
 
-* I ja II osa kohta tuleb esitada vastustega [Jupyter fail](../kodutood/kodutoo5.ipynb).
+* I ja II osa kohta tuleb esitada vastustega [R Markdown fail](../kodutood/kodutoo5.Rmd).
 
 
 Lahendused esitada [Moodle keskkonna](https://moodle.ut.ee/course/view.php?id=8013#section-1) kaudu.
