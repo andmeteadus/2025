@@ -56,7 +56,8 @@ Joonised paketiga ggplot2: erinevad joonisetüübid. Interaktiivsed rakendused p
 	* [R abi jooniste tegemisel](https://r-graph-gallery.com/index.html)
 * [Õppetulemuste visualiseerimise ülesanded](../praktikum3_oppeained)
 * [Kodutöö](../praktikum3_kodutoo)
-    * Tähtaeg 05.03.2023 kell 23:59.
+    * Tähtaeg LTMS.TK.027: 05.03.2023 kell 23:59
+    * I rühm: 12.03.2023 kell 23:59.
 
 
 ## Praktikum 4
@@ -68,7 +69,8 @@ Mittestandardne graafika. Kuidas teha sama häid jooniseid nagu NY Times seda te
 * [NBA ülesanded](../praktikum4_nba)
 * [Lennuliikluse visualiseerimise ülesanded](../praktikum4_geo)
 * [Kodutöö](../praktikum4_kodutoo)
-    * Tähtaeg 12.03.2023 kell 23:59.
+    * Tähtaeg LTMS.TK.027: 12.03.2023 kell 23:59
+    * I rühm: 19.03.2023 kell 23:59.
 
 ## Praktikum 5
 
@@ -80,7 +82,8 @@ Andmete kraapimine veebist. Näide: Riigikogu saadikute hääletamismustrid.
     * [rvest minimalistlik näide](../praktikum5_rvest_minimal)
 * [Veebi kraapimise ülesanded](../praktikum5_web)
 * [Kodutöö](../praktikum5_kodutoo)
-    * Tähtaeg 19.03.2023 kell 23:59.
+    * Tähtaeg LTMS.TK.027: 19.03.2023 kell 23:59
+    * I rühm: 26.03.2023 kell 23:59.
 
 ## Praktikum 6
 
@@ -94,7 +97,8 @@ Heatmap. Peakomponentanalüüs. Näide (jätkub): Riigikogu saadikute hääletam
 * [Käsitsi kirjutatud numbritel põhinevad ülesanded](../praktikum6_numbrid)
 * [Riigikogu saadikute hääletusmustrite analüüs](../praktikum6_polaarsus)
 * [Kodutöö](../praktikum6_kodutoo)
-    * Tähtaeg 26.03.2023 kell 23:59.
+    * Tähtaeg LTMS.TK.027: 26.03.2023 kell 23:59
+    * I rühm: 02.04.2023 kell 23:59.
 
 ## Praktikum 7
 
@@ -106,7 +110,8 @@ Logistiline regressioon. Mitmese testimise probleem. Näide: biomarkerid ja stat
     * [Logistilise regressiooni minimalistlik näide](../praktikum7_logreg_minimal)
 * [Biomarkerite abil surma prognoosimine](../praktikum7_biomarkerid)
 * [Kodutöö](../praktikum7_kodutoo)
-    * Tähtaeg 02.04.2023 kell 23:59.
+    * Tähtaeg LTMS.TK.027: 02.04.2023 kell 23:59
+    * I rühm: 09.04.2023 kell 23:59.
 
 ## Praktikum 8
 
@@ -116,7 +121,8 @@ Doping ja statistika. Statistiline test. Näide: ühe dopingujuhtumi analüüs.
 
 * [Dopingutesti ülesanded](../praktikum8_doping)
 * [Kodutöö](../praktikum8_kodutoo)
-    * Tähtaeg 09.04.2023 kell 23:59.
+    * Tähtaeg LTMS.TK.027: 09.04.2023 kell 23:59
+    * I rühm: 16.04.2023 kell 23:59.
 	
 
 <!-- ## Lisapraktikum -->
