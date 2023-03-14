@@ -53,8 +53,6 @@ Soovitame sul katsuda jõudu tutvuda ka teadusartikli endaga [Biomarker Profilin
 
 # Mida on vaja esitada?
 
-* I, II ja III osa kohta tuleb esitada vastustega [Jupyter fail](../kodutood/kodutoo6.ipynb).
-* Lisaks võiksid mainida, kui palju aega kulus I, II ja III osa peale. Mida arvad ülesannetest?
-
+* I, II ja III osa kohta tuleb esitada vastustega [R Markdown fail](../kodutood/kodutoo6.Rmd).
 
 Lahendused esitada [Moodle keskkonna](https://moodle.ut.ee/course/view.php?id=8013#section-1) kaudu.
