@@ -74,15 +74,14 @@ Näpunäited:
 -   Ääriseid saad muuta `par(mar = c(bottom, left, top, right))`
 -   Selleks, et saada esialgsed graafilisi parameetreid tagasi, võid käituda järgmiselt:
 
-```{=html}
-<!-- -->
-```
-    # sinu kood, kus muudad graafilisi parameetreid mfrow ja mar
-    # Näiteks
-    par(mfrow=c(2, 5), mar=c(1, 1, 1, 1) + 0.1)
+```{r}
+# sinu kood, kus muudad graafilisi parameetreid mfrow ja mar
+# Näiteks
+par(mfrow=c(2, 5), mar=c(1, 1, 1, 1) + 0.1)
 
-    # Pärast taasta esialgsed graafilised parameetrid
-    par(mfrow=c(1, 1), mar=c(5, 4, 4, 2) + 0.1)
+# Pärast taasta esialgsed graafilised parameetrid
+par(mfrow=c(1, 1), mar=c(5, 4, 4, 2) + 0.1)
+```
 
 ```{r}
 # Ülesanne 2.1a
@@ -210,10 +209,9 @@ Näpunäited:
 
 -   Kõigepealt joonista tühi aken.
 
-```{=html}
-<!-- -->
+```{r}
+#plot(0, 0, type = "n", xlim=c(0, 10), ylim=c(0, 10))
 ```
-    plot(0, 0, type = "n", xlim=c(?, ?), ylim=c(?, ?))
 
 -   `for` tsükli abil lisa numbrid.
 -   Sul ei ole vaja joonistada kõiki numbreid, sest numbrid võivad kattuda. Võid joonistada näiteks 500 numbrit.
