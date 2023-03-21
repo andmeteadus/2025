@@ -65,7 +65,8 @@ Visualiseeri, kuidas nende 3 biomarkeri jaotused erinevad soo ja vanusegruppide 
 
 Uuri, kas kolesterool võimaldab prognoosida surma. Selleks tuleb andmetele sobitada mudel. 
 
-a. Visualiseeri, kas kolesterooli (Serum_C, HDL_C, LDL_C) abil võiks saada prognoosida surma.  
+a. Visualiseeri, kas kolesterooli (Serum_C, HDL_C, LDL_C) abil võiks saada prognoosida surma. Vihje: paremaks visualiseerimiseks tee andmestik pikaks.
+
 ```{r}
 # Ülesanne 1.2a
 # sinu kood
