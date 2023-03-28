@@ -37,3 +37,13 @@ Selle eesmärgiks on veenduda, et analüüs on reprodutseeritav.
 * Kas populaarteaduslik artikkel / rakendus on põnev ja selge?
 * Kas visualisatsioonid on atraktiivsed ja annavad vastuse uuritud küsimusele?
 * Kas andmeanalüüs on reprodutseeritav?
+
+### Retsensioon
+
+Retsensioon on hinnang kaastudengi(te) tööle (pikkus kuni 1lk), mis sisaldab järgmisi punkte:
+
+* Hinnang töö vormistusele, joonistele, analüüsile
+* Kas kood töötab ja saate samasuguse väljundi nagu töö autor(id)
+* Töö tugevused ja nõrkused (kui neid on)
+* Vähemalt 2 küsimust töö autori(te)le (või ettepanekut, mida oleks võinud töös teistmoodi teha)
+
