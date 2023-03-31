@@ -31,6 +31,6 @@ Loe Krista Fischeri ja Donald A. Berry artiklit [Statisticians Introduce Science
 
 # Mida on vaja esitada?
 
-* I ja II osa kohta tuleb esitada vastustega [R Markdown fail](../kodutood/kodutoo7.Rmd). 
+* I ja II osa kohta tuleb esitada vastustega [R Markdown fail](../kodutood/kodutoo7.Rmd) ja html väljund. 
 
 Lahendused esitada [Moodle keskkonna](https://moodle.ut.ee/course/view.php?id=8013#section-1) kaudu.
