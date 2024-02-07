@@ -8,8 +8,8 @@ Inspiratsiooniks saab vaadata [2019.](https://andmeteadus.github.io/2019/projekt
 
 ### Tähtajad 
 
-* Projekti esitamise tähtaeg - TBD
-* Projektide esitlused - TBD
+* Projekti esitamise tähtaeg - TBA
+* Projektide esitlused - TBA
 
  Projekti saab esitada Moodle's Projekti foorumis. Lisa sinna projektiteema, andmete allikas, projekti tegijad ja tulemus. Vaata, et oleks kindlasti lisatud kõik projekti failid (vajalikud andmed, R-i skriptid, markdown failid jne).
 
