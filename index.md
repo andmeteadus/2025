@@ -84,7 +84,7 @@ Aine läbimiseks on vaja:
 
 Õppeaine toimub 2022/2023. õppeaasta kevadsemestril. 
 
-* **Praktikumid 1. rühmal reedeti kell 08:15 ruumis 2004 ja 2. rühmal kolmapäeviti kell 10:15 ruumis 2004.**
+* **Praktikumid 1. rühmal teisipäeviti kell 10:15 ruumis 2004 ja LTMS.TK.027 neljapäeviti kell 14:15 ruumis 2030.**
 * **Projekti tähtaeg: TBD**
 * **Projektide ettekandmine: TBD**
 
@@ -94,8 +94,8 @@ Aine läbimiseks on vaja:
 <img src="lektor.jpg" width="200"/>
 -->
 
-Kaari Kuus ja Raul Niit <br>
-kaari.kuus@ut.ee, raul.niit@ut.ee
+Saskia Kuusk ja Lotta-Lorette Kalmaru <br>
+saskia.kuusk@ut.ee, lotta-lorette.kalmaru@ut.ee
 
 
 <!-- Antud kursust toetab [DataCamp](https://www.datacamp.com/). Aines osalejatel on võimalus võtta kõiki DataCamp kursuseid tasuta. Kõigest täpsemalt esimeses praktikumis. -->
