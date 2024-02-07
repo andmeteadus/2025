@@ -3,7 +3,7 @@ layout: page
 title: Praktikumimaterjalid
 ---
 
-Praktikumi materjalid täienevad jooksvalt, 2022. aasta materjalidega saab tutvuda [siin](../../2022/praktikumid/).
+Praktikumi materjalid täienevad jooksvalt, 2023. aasta materjalidega saab tutvuda [siin](../../2023/praktikumid/).
 
 ## Praktikum 1
 
@@ -22,7 +22,7 @@ Pakett knitr. Markdown. Pakett dplyr. Näide: automaatne aktsiaturu ülevaade.
     * [dplyr minimalistlik näide](../praktikum1_dplyr)
 * [Automaatne aktsiaturu ülevaade](../praktikum1_aktsiad)
 * [Kodutöö](../praktikum1_kodutoo)
-    * Tähtaeg 19.02.2023 kell 23:59.
+    * Tähtaeg TBA.
 
 
 ## Praktikum 2
@@ -39,7 +39,7 @@ Pettuse tuvastamine Benfordi seaduse abil.
 * [*Growth in a time of debt*: riigi võlakoormuse ja SKP vaheline seos](../praktikum2_riigivolg)
 * [Pettuse tuvastamise ülesanded](../praktikum2_pettus)
 * [Kodutöö](../praktikum2_kodutoo)
-    * Tähtaeg 26.02.2023 kell 23:59.
+    * Tähtaeg TBA.
 
 ## Praktikum 3
 
@@ -56,8 +56,7 @@ Joonised paketiga ggplot2: erinevad joonisetüübid. Interaktiivsed rakendused p
 	* [R abi jooniste tegemisel](https://r-graph-gallery.com/index.html)
 * [Õppetulemuste visualiseerimise ülesanded](../praktikum3_oppeained)
 * [Kodutöö](../praktikum3_kodutoo)
-    * Tähtaeg LTMS.TK.027: 05.03.2023 kell 23:59
-    * I rühm: 12.03.2023 kell 23:59.
+    * Tähtaeg TBA.
 
 
 ## Praktikum 4
@@ -69,8 +68,7 @@ Mittestandardne graafika. Kuidas teha sama häid jooniseid nagu NY Times seda te
 * [NBA ülesanded](../praktikum4_nba)
 * [Lennuliikluse visualiseerimise ülesanded](../praktikum4_geo)
 * [Kodutöö](../praktikum4_kodutoo)
-    * Tähtaeg LTMS.TK.027: 12.03.2023 kell 23:59
-    * I rühm: 19.03.2023 kell 23:59.
+    * Tähtaeg TBA.
 
 ## Praktikum 5
 
@@ -82,8 +80,7 @@ Andmete kraapimine veebist. Näide: Riigikogu saadikute hääletamismustrid.
     * [rvest minimalistlik näide](../praktikum5_rvest_minimal)
 * [Veebi kraapimise ülesanded](../praktikum5_web)
 * [Kodutöö](../praktikum5_kodutoo)
-    * Tähtaeg LTMS.TK.027: 19.03.2023 kell 23:59
-    * I rühm: 26.03.2023 kell 23:59.
+    * Tähtaeg TBA.
 
 ## Praktikum 6
 
@@ -97,8 +94,7 @@ Heatmap. Peakomponentanalüüs. Näide (jätkub): Riigikogu saadikute hääletam
 * [Käsitsi kirjutatud numbritel põhinevad ülesanded](../praktikum6_numbrid)
 * [Riigikogu saadikute hääletusmustrite analüüs](../praktikum6_polaarsus)
 * [Kodutöö](../praktikum6_kodutoo)
-    * Tähtaeg LTMS.TK.027: 26.03.2023 kell 23:59
-    * I rühm: 02.04.2023 kell 23:59.
+    * Tähtaeg TBA.
 
 ## Praktikum 7
 
@@ -110,8 +106,7 @@ Logistiline regressioon. Mitmese testimise probleem. Näide: biomarkerid ja stat
     * [Logistilise regressiooni minimalistlik näide](../praktikum7_logreg_minimal)
 * [Biomarkerite abil surma prognoosimine](../praktikum7_biomarkerid)
 * [Kodutöö](../praktikum7_kodutoo)
-    * Tähtaeg LTMS.TK.027: 02.04.2023 kell 23:59
-    * I rühm: 09.04.2023 kell 23:59.
+    * Tähtaeg TBA.
 
 ## Praktikum 8
 
@@ -121,8 +116,7 @@ Doping ja statistika. Statistiline test. Näide: ühe dopingujuhtumi analüüs.
 
 * [Dopingutesti ülesanded](../praktikum8_doping)
 * [Kodutöö](../praktikum8_kodutoo)
-    * Tähtaeg LTMS.TK.027: 09.04.2023 kell 23:59
-    * I rühm: 16.04.2023 kell 23:59.
+    * Tähtaeg TBA.
 	
 
 <!-- ## Lisapraktikum -->
