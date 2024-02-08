@@ -95,7 +95,7 @@ Aine läbimiseks on vaja:
 -->
 
 Saskia Kuusk ja Lotta-Lorette Kalmaru <br>
-saskia.kuusk@ut.ee, lotta-lorette.kalmaru@ut.ee
+saskia.kuusk[at]ut.ee, lotta-lorette.kalmaru[at]ut.ee
 
 
 <!-- Antud kursust toetab [DataCamp](https://www.datacamp.com/). Aines osalejatel on võimalus võtta kõiki DataCamp kursuseid tasuta. Kõigest täpsemalt esimeses praktikumis. -->
