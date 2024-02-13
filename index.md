@@ -61,7 +61,7 @@ Lisaks praktikumidele sisaldab õppeaine järgnevaid komponente:
 * **Kodutööd:** Kokku antakse 8 kodutööd (igaüks 25 punkti). 
   * Kodutöö sisaldab enamasti andmete analüüsimist, visualiseerimist jne. Iga kodutöö tulemuseks on [knitr](http://yihui.name/knitr/)-i raport koos R-i koodi ning kommentaaridega. 
   * Kodutöö võib sisaldada ka küsimusi iseseisvalt õpitu (näiteks videoloengu) kohta. 
-  * Kodutööde esitamine käib läbi Moodle'i ja tähtaeg on 1 nädal. Võlgnevuste likvideerimine kokkuleppel õppejõuga.
+  * Kodutööde esitamine käib läbi Moodle'i ja tähtaeg on **10 päeva**. Võlgnevuste likvideerimine kokkuleppel õppejõuga.
 * **Projekt:** Lisaks tuleb läbi viia üks praktiline andmeanalüüs, mille põhjal tuleb kas kirjutada populaarteaduslikus vormis artikkel või luua Shiny rakendus saadud tulemustest.
 Projekti võib teha kas üksinda või grupitööna. Tulemusi on vaja esitleda suulisel kaitsmisel. Soovi korral võib tutvuda [varasemalt tehtud projektidega](https://andmeteadus.github.io/2023/projekt_juhend/).
  * Iga projekti esitanud tudeng(id) saavad ühe (juhusliku) kaastudengi(te) projekti retsenseerimiseks.
