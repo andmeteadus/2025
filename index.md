@@ -84,10 +84,10 @@ Aine läbimiseks on vaja:
 
 Õppeaine toimub 2023/2024. õppeaasta kevadsemestril. 
 
-* Praktikumid 1. rühmal teisipäeviti kell 10:15 ruumis 2004 ja LTMS.TK.027 rühmal neljapäeviti kell 14:15 ruumis 2030.
-* Projekti tähtaeg: 1. rühmal **14.05.24**, LTMS.TK.027 rühmal **16.05.24.**
-* Retsensioonide tähtaeg: 1. rühmal **17.05.24**, LTMS.TK.027 rühmal **19.05.24.**
-* Projektide ettekandmine: 1. rühmal **21.05.24**, LTMS.TK.027 rühmal **23.05.24.**
+* **Praktikumid** 1. rühmal teisipäeviti kell 10:15 ruumis 2004 ja LTMS.TK.027 rühmal neljapäeviti kell 14:15 ruumis 2030.
+* **Projekti tähtaeg:** 1. rühmal **14.05.24**, LTMS.TK.027 rühmal **16.05.24.**
+* **Retsensioonide tähtaeg:** 1. rühmal **17.05.24**, LTMS.TK.027 rühmal **19.05.24.**
+* **Projektide ettekandmine:** 1. rühmal **21.05.24**, LTMS.TK.027 rühmal **23.05.24.**
 
 
 # Kontakt ja küsimused
