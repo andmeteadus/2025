@@ -140,7 +140,7 @@ Juhised:
 
 -   Kõigepealt tekita andmestikku juurde järgmised kaks tunnust:
     -   kasumi-aktsiahinna suhe (kasum_aktsia_kohta/hind) [kui sa tead, mida tähendab PE suhe, siis me arvutame PE suhte pöördväärtust]
-    -   dividendi määr (dividend_aktsia_kohta/hind) [pane tähele, et mõnel ettevõttel on `dividend_aktsia_kohta` väärtus `NA`. Asenda esmalt puuduvad väärtused 0-ga]
+    -   dividendi määr (dividend_aktsia_kohta/hind)
 -   Arvuta iga aktsia kohta atraktiivsuse skoor, mis on arvutatud järgnevalt `0.5 * kasumi-aktsiahinna suhe + 0.5 * dividendi määr`
 -   Ostusoovituseks leia kolm kõige suurema skooriga aktsiat.
 
