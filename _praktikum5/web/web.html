@@ -259,10 +259,10 @@ teine.</p>
 <li><p>Väärtuste eraldamiseks kasuta atribuuti <em>href</em>. Uuri,
 kuidas eraldada atribuute CSS-i õppimise <em>tutorialist</em> <a href="http://flukeout.github.io/" class="uri">http://flukeout.github.io/</a> (alates levelist
 27).</p></li>
-<li><p>Kasutada paketi <em>readr</em> funktsiooni
-<code>parse_number()</code> kui sa ei taha regulaaravaldistega mässata.
+<li><p>Kasutada paketi <em>stringr</em> funktsiooni
+<code>str_extract()</code> kui sa ei taha regulaaravaldistega mässata.
 Vaata näiteks, mida teeb järgmine koodirida
-<code>&quot;Kokku: 101 liiget&quot; %&gt;% parse_number()</code></p></li>
+<code>&quot;Kokku: 101 liiget&quot; %&gt;% str_extract(&quot&bsol;&bsol;d+&quot)</code></p></li>
 </ul>
 <pre class="r"><code># Ülesanne 1.3
 url = &quot;https://www.riigikogu.ee/tegevus/tooulevaade/haaletused/haaletustulemused-kohalolekukontroll/905a7f22-99c0-4188-8bb6-0fe9125127a2&quot;
