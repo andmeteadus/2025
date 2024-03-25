@@ -209,7 +209,7 @@ J채rgmises praktikumis kasutame peakomponentanal체체si, seet천ttu seisneb kodut�
 
 **SINU VASTUS:**
 
-(**1 punkt**) Vaata Stanfordi masin천ppe kursuse videot [Principal Component Analysis Problem Formulation](https://www.youtube.com/watch?v=T-B8muDvzu0)
+(**1 punkt**) Vaata visuaalselt selgitavat videot [Principal Component Analysis (PCA)](https://youtu.be/FD4DeN81ODY?si=Ha1zPKpm7OzmfPsc)
 
 -   Mida uut said siit videost teada lisaks eelnevale kahele? Kumb meeldis rohkem?
 
