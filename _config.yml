@@ -6,16 +6,16 @@ title:            Statistiline andmeteadus ja visualiseerimine
 tagline:          MTMS.01.100
 url:              http://andmeteadus.github.io/
 paginate:         1
-baseurl:          /2024
+baseurl:          /2025
 author:
   name:           Saskia Kuusk, Lotta-Lorette Kalmaru, Kaari Kuus, Raul Niit, Tanel Pärnamaa, Kaspar Märtens
   url:            
-  email:          saskia.kuusk@ut.ee, lotta-lorette.kalmaru@ut.ee
+  email:          mihkel.juri.pius@ut.ee, rait.robert.suurmets@ut.ee
 
 # Custom vars
 version:          1.0.0
 github:
-  repo:           http://andmeteadus.github.io/2024
+  repo:           http://andmeteadus.github.io/2025
 
 pages_list:       
   Praktikumid: '/praktikumid'
