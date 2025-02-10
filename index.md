@@ -61,9 +61,9 @@ Lisaks praktikumidele sisaldab õppeaine järgnevaid komponente:
 * **Kodutööd:** Kokku antakse 8 kodutööd (igaüks 25 punkti). 
   * Kodutöö sisaldab enamasti andmete analüüsimist, visualiseerimist jne. Iga kodutöö tulemuseks on [knitr](http://yihui.name/knitr/)-i raport koos R-i koodi ning kommentaaridega. 
   * Kodutöö võib sisaldada ka küsimusi iseseisvalt õpitu (näiteks videoloengu) kohta. 
-  * Kodutööde esitamine käib läbi Moodle'i ja tähtaeg on **10 päeva**. Võlgnevuste likvideerimine kokkuleppel õppejõuga.
+  * Kodutööde esitamine käib läbi Moodle'i ja tähtaeg on **järgmise nädala pühapäev**. Võlgnevuste likvideerimine kokkuleppel õppejõuga.
 * **Projekt:** Lisaks tuleb läbi viia üks praktiline andmeanalüüs, mille põhjal tuleb kas kirjutada populaarteaduslikus vormis artikkel või luua Shiny rakendus saadud tulemustest.
-Projekti võib teha kas üksinda või grupitööna. Tulemusi on vaja esitleda suulisel kaitsmisel. Soovi korral võib tutvuda [varasemalt tehtud projektidega](https://andmeteadus.github.io/2023/projekt_juhend/).
+Projekti võib teha kas üksinda või grupitööna. Tulemusi on vaja esitleda suulisel kaitsmisel. Soovi korral võib tutvuda [varasemalt tehtud projektidega](https://andmeteadus.github.io/2024/projekt_juhend/).
  * Iga projekti esitanud tudeng(id) saavad ühe (juhusliku) kaastudengi(te) projekti retsenseerimiseks.
 
 Aine läbimiseks on vaja:
@@ -84,10 +84,10 @@ Aine läbimiseks on vaja:
 
 Õppeaine toimub 2023/2024. õppeaasta kevadsemestril. 
 
-* **Praktikumid** 1. rühmal teisipäeviti kell 10:15 ruumis 2004 ja LTMS.TK.027 rühmal neljapäeviti kell 14:15 ruumis 2030.
-* **Projekti tähtaeg:** 1. rühmal **14.05.24**, LTMS.TK.027 rühmal **16.05.24.**
-* **Retsensioonide tähtaeg:** 1. rühmal **17.05.24**, LTMS.TK.027 rühmal **19.05.24.**
-* **Projektide ettekandmine:** 1. rühmal **21.05.24**, LTMS.TK.027 rühmal **23.05.24.**
+* **Praktikumid** 1. rühmal neljapäeviti kell 8:30 ruumis 2004 ja LTMS.TK.027 rühmal kolmapäeviti kell 12:15 ruumis 2004.
+* **Projekti tähtaeg:** 1. rühmal **04.05.25**, LTMS.TK.027 rühmal **04.05.25.**
+* **Retsensioonide tähtaeg:** 1. rühmal **07.05.25 23:59**, LTMS.TK.027 rühmal **07.05.25 23:59.**
+* **Projektide ettekandmine:** 1. rühmal **TBA**, LTMS.TK.027 rühmal **TBA.**
 
 
 # Kontakt ja küsimused
@@ -96,8 +96,8 @@ Aine läbimiseks on vaja:
 <img src="lektor.jpg" width="200"/>
 -->
 
-Saskia Kuusk ja Lotta-Lorette Kalmaru <br>
-saskia.kuusk[at]ut.ee, lotta-lorette.kalmaru[at]ut.ee
+Mihkel Jüri Pius ja Rait Robert Suurmets <br>
+mihkel.juri.pius[at]ut.ee, rait.robert.suurmets[at]ut.ee
 
 
 <!-- Antud kursust toetab [DataCamp](https://www.datacamp.com/). Aines osalejatel on võimalus võtta kõiki DataCamp kursuseid tasuta. Kõigest täpsemalt esimeses praktikumis. -->
