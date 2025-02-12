@@ -82,7 +82,7 @@ Aine läbimiseks on vaja:
 
 # Tunniplaan
 
-Õppeaine toimub 2023/2024. õppeaasta kevadsemestril. 
+Õppeaine toimub 2024/2025. õppeaasta kevadsemestril. 
 
 * **Praktikumid** 1. rühmal neljapäeviti kell 8:30 ruumis 2004 ja LTMS.TK.027 rühmal kolmapäeviti kell 12:15 ruumis 2004.
 * **Projekti tähtaeg:** 1. rühmal **04.05.25 23:59**, LTMS.TK.027 rühmal **04.05.25 23:59.**
