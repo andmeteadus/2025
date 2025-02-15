@@ -201,14 +201,13 @@ Kasuta paketti `kableExtra`, et vormindada ühte või enamat raportis olevat tab
 
 ### Boonusülesanne 2 (3 punkti): andmete automaatne uuenemine
 
-Muuda kodutööd selliselt, et staatilise faili *Aktsiad 2022.csv* asemel kasutatakse reaalajas andmeid, mis on saadud portaalist *finance.yahoo.com*.
+Lisa raporti lõppu tabel, mis kasutab staatilise faili *Aktsiad 2022.csv* asemel reaalajas andmeid, mis on saadud portaalist *finance.yahoo.com*.
 
 Mõned näpunäited:
 
--   kasuta R-i paketti `quantmod`
--   kasuks tuleb funktsioon `getQuote`
--   tunnuste loetelu nägemiseks, mida on võimalik *finance.yahoo.com* portaalist saada, on abiks funktsioon `yahooQF()`
--   hinnana kasuta tunnust *Last Trade (Price Only)*, sümbolina *Symbol*, tootlusena *Change in Percent*, kogusena *Volume*, kasumina aktsia kohta *Earnings/Share*, dividendina aktsia kohta *Dividend/Share*
+-   kasuta R-i paketti `tidyquant`
+-   kasuks tuleb funktsioon `tq_get`
+-   hinnana kasuta tunnust *close*, sümbolina *symbol*, tootlus arvutada (kasutades eelmise kauplemispäeva sulgemishinda, kasuks tulevad funktsioonid `first` ja `last`), kogusena *volume*, kasumeid ja dividende aktsiate kohta tidyquant ilma API-ta ei anna, seetõttu ei pea ostusoovitusi lisama
 -   ettevõtete nime ja sektori saab Wikipedia lehelt alla laadida järgmise koodijupi abil:
 
 ```{r, eval=FALSE}
