@@ -216,7 +216,7 @@ sp500_wiki <- read_html(
   "https://en.wikipedia.org/wiki/List_of_S%26P_500_companies")
 
 aktsiad_wiki <- sp500_wiki %>%
-  html_nodes("#constituents")
+  html_nodes("#constituents") %>%
   html_table()
 
 aktsiad_wiki <- aktsiad_wiki[[1]][,c(1,2,4)]
