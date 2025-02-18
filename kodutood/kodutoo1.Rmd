@@ -207,7 +207,7 @@ Mõned näpunäited:
 
 -   kasuta R-i paketti `tidyquant`
 -   kasuks tuleb funktsioon `tq_get`
--   hinnana kasuta tunnust *close*, sümbolina *symbol*, tootlus arvutada (kasutades eelmise kauplemispäeva sulgemishinda, kasuks tulevad funktsioonid `first` ja `last`), kogusena *volume*, kasumeid ja dividende aktsiate kohta tidyquant ilma API-ta ei anna, seetõttu ei pea ostusoovitusi lisama
+-   hinnana kasuta tunnust *close*, sümbolina *symbol*, tootlus arvutada (kasutades eelmise kauplemispäeva sulgemishinda, kasuks võivad tulla funktsioonid `first`, `last` ja `nth`), kogusena *volume*, kasumeid ja dividende aktsiate kohta tidyquant ilma API-ta ei anna, seetõttu ei pea ostusoovitusi lisama
 -   ettevõtete nime ja sektori saab Wikipedia lehelt alla laadida järgmise koodijupi abil:
 
 ```{r, eval=FALSE}
