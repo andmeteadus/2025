@@ -404,7 +404,7 @@ Vaata videot [The tradeoff between sensitivity and specificity](https://www.yout
 
 ### Ülesanne 2.2 (**4 punkti**)
 
-Loe Krista Fischeri ja Donald A. Berry artiklit [Statisticians Introduce Science to International Doping Agency: The Andrus Veerpalu Case](http://chance.amstat.org/2014/09/doping/) ning vasta järgmistele küsimustele.
+Loe Krista Fischeri ja Donald A. Berry artiklit [Statisticians Introduce Science to International Doping Agency: The Andrus Veerpalu Case](https://www.tandfonline.com/doi/full/10.1080/09332480.2014.965625) ning vasta järgmistele küsimustele.
 
 -   Sportlase verest mõõdeti kasvuhormooni (*hGH*) kahte isovormi *recGH* ja *pitGH*. Millist teststatistikut kasutati? (Vihje: testi nimetati *hGH Isoform Ratio Test*)
 
