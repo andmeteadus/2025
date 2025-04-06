@@ -250,7 +250,9 @@ Visualiseeri saadud tulemust. Võid teha näiteks sellise joonise p-väärtustes
 
 Nüüd saime kõigi biomarkerite jaoks teada p-väärtused. Jääb veel küsimus, millised neist peaksime liigitama olulisteks. 
 
-Kuna testisime kõigi 106 biomarkeri olulisust surma ennustamisel, puutume kokku mitmese testimise probleemiga. Vaata selle kohta [koomiksit "Significant"](https://xkcd.com/882/) ning uuri [materjalist]( http://www.stat.berkeley.edu/~mgoldman/Section0402.pdf) mitmese testimise ja Bonferroni korrektsiooni kohta. 
+Kuna testisime kõigi 106 biomarkeri olulisust surma ennustamisel, puutume kokku mitmese testimise probleemiga. Vaata selle kohta [koomiksit "Significant"](https://xkcd.com/882/) ning uuri wikipediast
+[mitmese testimise](https://en.wikipedia.org/wiki/Multiple_comparisons_problem) ja [Bonferroni korrektsiooni](https://en.wikipedia.org/wiki/Bonferroni_correction) kohta.
+Alternatiivselt võid vaadata Märt Mölsi [biostatistika kursuse](https://www-1.ms.ut.ee/mart/biostat2024/) 14. teema loengumaterjale.</p>. 
 
 a. (**1 punkt**) Selgita, milles seisnes koomiksi idee. 
 
