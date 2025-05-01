@@ -86,7 +86,7 @@ Aine läbimiseks on vaja:
 
 * **Praktikumid** 1. rühmal neljapäeviti kell 8:30 ruumis 2004 ja LTMS.TK.027 rühmal kolmapäeviti kell 12:15 ruumis 2004.
 * **Projekti tähtaeg:** 1. rühmal **04.05.25 23:59**, LTMS.TK.027 rühmal **04.05.25 23:59.**
-* **Retsensioonide tähtaeg:** 1. rühmal **07.05.25 23:59**, LTMS.TK.027 rühmal **07.05.25 23:59.**
+* **Retsensioonide tähtaeg:** 1. rühmal **14.05.25 23:59**, LTMS.TK.027 rühmal **14.05.25 23:59.**
 * **Projektide ettekandmine:** 1. rühmal **TBA**, LTMS.TK.027 rühmal **TBA.**
 
 
