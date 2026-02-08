@@ -15,7 +15,7 @@ E-raamatud:
 
 ## Andmeteadus
 
-* [11 Must-Watch TED Talks on Data Science](https://www.springboard.com/blog/11-must-watch-ted-talks-on-data-science/) 
+* [11 Must-Watch TED Talks on Data Science](https://www.springboard.com/blog/data-science/11-must-watch-ted-talks-on-data-science/) 
 * Huvitavad artiklid andmeteaduste teemal (rohkem akadeemilisem): [Harvard Data Science Review](https://hdsr.mitpress.mit.edu/)
 
 ## Visualiseerimine
