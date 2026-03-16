@@ -130,7 +130,7 @@ Visualiseeri, kuidas jaotusid otsused fraktsioonide lõikes.
 
 > Eva "Usin" Masin töötab start-upis, mis lubab Eesti turule tuua unikaalse personaalse uudisterakenduse, mis filtreerib uudiseid vastavalt kasutaja soovidele. Eva "Usin" Masin pandi koostama andmebaasi Postimehe esilehe uudiste kohta. Eva teab, kuidas karjääriredelis ülespoole ronida: "Bossi käsu peale olgu uudiste pealkirjad võimalikult kiiresti olemas".
 
-Automatiseeri seesama protsess. Tagasta kõik Postimehe esilehe uudiste pealkirjad (joonisel näidatud kollasega).
+Automatiseeri seesama protsess. Tagasta kõik Postimehe (või soovi korral ERR) esilehe uudiste pealkirjad (joonisel näidatud kollasega).
 
 -   Ära kurvasta, kui sa ei saa absoluutselt kõiki pealkirju, 97% on praegu piisav.
 -   Kui sulle ei meeldi Postimehe veebilehe hiiglaslikku lähtekoodi inspekteerida brauseris vaikimisi olevate vahenditega, siis abiks on praktikumis tutvustatud tööriist [selectorgadget](http://selectorgadget.com/).
@@ -140,7 +140,7 @@ Automatiseeri seesama protsess. Tagasta kõik Postimehe esilehe uudiste pealkirj
 
 ```{r}
 # Ülesanne 1.6
-url = "http://www.postimees.ee/"
+url = "http://www.postimees.ee/" #või url = "https://www.err.ee/"
 
 # sinu kood
 ```
